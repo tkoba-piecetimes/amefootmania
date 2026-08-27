@@ -86,21 +86,20 @@ python pipeline/generate_site.py
 5. 本番HTMLで `<meta name="robots">` タグが消えていること、`robots.txt` が
    `Allow: /` に戻っていることを確認する
 
-## 画像クレジット（内部記録・2026-08-27追加）
+## 画像クレジット（内部記録・2026-08-27追加、同日hero差し替え）
 
-`assets/` 配下の写真は Pexels（pexels.com）から取得。Pexels Licenseは商用利用可・帰属表示不要
-（サイト上でのクレジット表記は不要）だが、内部記録として出典を残す。いずれも大学アメフトの
-雰囲気に合うフィールド・ボール等の物撮りで、選手の顔が大きく写るもの・NFL等の商標が明確に
-写るものは選定除外している（採用可否の判断過程は各写真ページのライセンス表示で確認済み）。
-
-| ファイル | 用途 | 出典URL | ライセンス |
+| ファイル | 用途 | 出典 | ライセンス／備考 |
 | --- | --- | --- | --- |
-| `assets/hero.jpg` | トップページ hero（`build_portal`） | https://www.pexels.com/photo/american-football-ball-26707860/ | Pexels License（商用利用可・帰属不要） |
+| `assets/hero.jpg` | トップページ hero（`build_portal`） | 運営提供素材（2026-08-27、木場さん提供） | 提供元管理。架空チーム「VALOR」のAI生成ビジュアルで実在選手の肖像は含まない。元WebP（1672x941）をJPEG変換・幅1600pxに圧縮して配置 |
 | `assets/ogp.png` | OGP/Twitterカード画像（全ページ共通、`page()`内で自動参照） | https://www.pexels.com/photo/a-football-helmet-on-a-field-at-night-28239821/ | Pexels License（商用利用可・帰属不要） |
 | `assets/league-header.jpg` | リーグトップページ（TOP8・BIG8共通）のヘッダー画像（`build_league`） | https://www.pexels.com/photo/black-and-white-football-on-wooden-posts-32963711/ | Pexels License（商用利用可・帰属不要） |
 
-いずれも元画像をトリミング・幅1600px程度にリサイズ・JPEG品質80（`ogp.png`のみPNG化）で圧縮して配置。
-Pexels Licenseの全文: https://www.pexels.com/license/
+Pexels由来の画像はいずれも元画像をトリミング・幅1600px程度にリサイズ・JPEG品質80（`ogp.png`のみPNG化）で圧縮。
+Pexels Licenseの全文: https://www.pexels.com/license/ （商用利用可・帰属表示不要、選手の顔が大きく写るもの・
+NFL等の商標が明確に写るものは選定除外という基準で採用可否を判断）。
+
+旧hero（Pexels「American Football Ball」26707860）は2026-08-27にhero差し替えに伴い削除。他スロットでは
+使用していない。
 
 ## 未実装（今後）
 

@@ -24,8 +24,8 @@ SITE = ROOT / "site"
 ASSETS = ROOT / "assets"
 CONTENT = ROOT / "content" / "articles"
 
-# GitHub Pagesのサブパス配信中の暫定値。カスタムドメイン取得後に変更する。
-SITE_BASE = "https://tkoba-piecetimes.github.io/amefootmania/"
+# カスタムドメイン（2026-08-27切替）。旧: https://tkoba-piecetimes.github.io/amefootmania/
+SITE_BASE = "https://amefootmania.jp/"
 
 # 暫定noindexフラグ: 現在の配信URLに運営元を示す文字列が含まれるため、
 # カスタムドメイン取得までの間、検索エンジンに拾われないようにする。
@@ -33,7 +33,8 @@ SITE_BASE = "https://tkoba-piecetimes.github.io/amefootmania/"
 # を出力し、(2) site/robots.txt を全面Disallowにする。
 # 解除手順: カスタムドメイン設定後、このフラグを False にして
 # `python pipeline/generate_site.py` を再実行し、変更をコミット・pushする。
-TEMP_NOINDEX = True
+# 2026-08-27: カスタムドメイン切替に伴い解除。
+TEMP_NOINDEX = False
 
 # GA4測定ID: 2026-08-27時点で未発行のため空欄。発行後はここにIDを設定し、
 # page() 内のgtag挿入コードのコメントアウトを解除する。

@@ -3,9 +3,9 @@
 大学アメリカンフットボールの情報メディア「アメフトマニア」。
 rugbymania（C:\Users\tatsu\claudecode\rugbymania）のアーキテクチャを移植した第2弾。
 
-- 公開URL: https://tkoba-piecetimes.github.io/amefootmania/
-  （カスタムドメインは未取得。取得後は pipeline/generate_site.py の SITE_BASE を変更する。
-  **現在このURLは下記「暫定noindex」により検索エンジンに非公開**）
+- 公開URL: https://amefootmania.jp/ （2026-08-27 カスタムドメインへ切替済み）
+  - 旧URL https://tkoba-piecetimes.github.io/amefootmania/ は新ドメインへリダイレクトされる
+  - 下記「暫定noindex」は解除済み。全ページが検索エンジンのインデックス対象
 - 対象: **関東学生アメリカンフットボール連盟（KCFA・https://www.kcfa.jp/）のTOP8・BIG8のみ**
   （関西・2部以下・医科歯科・7人制は対象外。第2フェーズ候補）
 - 直近シーズン＋過去3シーズン分のデータ、試合ページ、記録室
@@ -64,27 +64,27 @@ python pipeline/generate_site.py
 - /contact ページは今回未実装（6媒体共通のフォーム基盤を別トラックで実装中、後日追加）。
 - フッターに出典明記（関東学生アメリカンフットボール連盟へのリンク）。
 
-## 暫定noindex（カスタムドメイン取得までの措置・2026-08-27追加）
+## 暫定noindex（カスタムドメイン取得までの措置・2026-08-27追加、同日ドメイン切替済み）
 
-現在の配信URL（`tkoba-piecetimes.github.io/amefootmania`）はURL自体に運営元を示す
+旧配信URL（`tkoba-piecetimes.github.io/amefootmania`）はURL自体に運営元を示す
 文字列を含むため、カスタムドメイン取得までの間、検索エンジンに拾われないよう
-以下の2点を有効にしている。
+以下の2点を有効にしていた。
 
-- `pipeline/generate_site.py` の `TEMP_NOINDEX = True`（ファイル冒頭の定数）
+- `pipeline/generate_site.py` の `TEMP_NOINDEX`（ファイル冒頭の定数）
   - `True` の間、生成される全ページの `<head>` に
     `<meta name="robots" content="noindex, nofollow">` を出力する
   - `True` の間、`site/robots.txt` を `User-agent: *` / `Disallow: /`（全面クロール拒否）にする
 - 通常時（サイト稼働中の恒常仕様）は、noindexダッシュボード（`dash-am-ops`）以外の
   全ページがインデックス対象になり、robots.txtも `Allow: /` ＋ sitemap.xml案内になる
 
-**解除手順**（カスタムドメイン設定後）:
+**解除済み**（2026-08-27、ドメイン切替と同時に実施）:
 
-1. `pipeline/generate_site.py` の `SITE_BASE` をカスタムドメインのURLに変更
+1. `pipeline/generate_site.py` の `SITE_BASE` を `https://amefootmania.jp/` に変更
 2. 同ファイルの `TEMP_NOINDEX` を `False` に変更
 3. `python pipeline/generate_site.py` を再実行
 4. 変更を commit・push（push時に Actions が自動デプロイする）
 5. 本番HTMLで `<meta name="robots">` タグが消えていること、`robots.txt` が
-   `Allow: /` に戻っていることを確認する
+   `Allow: /` に戻っていることを確認済み
 
 ## 画像クレジット（内部記録・2026-08-27追加、同日hero差し替え）
 
@@ -103,7 +103,19 @@ NFL等の商標が明確に写るものは選定除外という基準で採用�
 
 ## 未実装（今後）
 
-- カスタムドメイン取得・GitHub Pages設定
 - GA4 / Search Console 連携
 - /contact ページ（6媒体共通フォーム基盤の実装待ち）
 - 関西学生アメリカンフットボール連盟（第2フェーズ）
+
+## ドメイン切替（2026-08-27）
+
+カスタムドメイン amefootmania.jp を取得し、暫定配信URL
+（`tkoba-piecetimes.github.io/amefootmania`）から切替済み。
+
+- お名前.com Navi でDNSレコード設定（A×4: 185.199.108/109/110/111.153）を追加し、
+  ネームサーバーをお名前.comのDNSレコード設定用（`01〜04.dnsv.jp`）に変更
+  （登録直後はレジストラのパーキング用ネームサーバー `dns1/dns2.onamae.com` のままで、
+  DNSレコード設定だけでは反映されないため注意）
+- GitHub Pages側は `gh api -X PUT repos/tkoba-piecetimes/amefootmania/pages -f cname=amefootmania.jp`
+  でカスタムドメインを設定し、証明書発行確認後に `https_enforced=true` を設定
+- `pipeline/generate_site.py` の `SITE_BASE` 変更・`TEMP_NOINDEX` 解除は上記「暫定noindex」節の通り

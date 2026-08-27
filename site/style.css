@@ -37,6 +37,7 @@ a:hover { color:var(--accent-dark); }
 
 .hero { max-width:960px; margin:0 auto; padding:1.6rem 1rem 0; }
 .hero-img { width:100%; height:auto; display:block; border-radius:12px; margin-bottom:1.1rem; }
+.league-header-img { margin-top:1.6rem; }
 .hero-text { padding-bottom:1.8rem; }
 .hero-kicker { color:var(--accent-dark); font-weight:700; font-size:.85rem;
   letter-spacing:.2em; text-transform:uppercase; margin:0 0 .4rem; }

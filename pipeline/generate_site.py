@@ -531,7 +531,12 @@ def build_league(lg, articles):
     awaiting = [m for m in scheduled if m["date"] and m["date"] < today]
     recent = list(reversed([m for m in played if m["date"]]))[:8]
 
-    body = f'<h1>{escape(league_name)}</h1>'
+    # リーグトップページのヘッダー画像。hero.jpg同様、assets/league-header.jpg が
+    # 無ければ自動非表示（2026-08-27追加）。TOP8・BIG8共通の1枚を使う想定。
+    body = (f'<img class="hero-img league-header-img" src="{R}assets/league-header.jpg" '
+            'alt="" width="1080" height="607">'
+            if (ASSETS / "league-header.jpg").exists() else "")
+    body += f'<h1>{escape(league_name)}</h1>'
     body += f'<p class="lead">試合結果・日程・順位表を毎日更新。チーム{len(lg["teams"])}・全{len(matches)}試合。</p>'
     if recent:
         body += ('<section><h2>最新の試合結果</h2>'
@@ -1007,6 +1012,7 @@ a:hover { color:var(--accent-dark); }
 
 .hero { max-width:960px; margin:0 auto; padding:1.6rem 1rem 0; }
 .hero-img { width:100%; height:auto; display:block; border-radius:12px; margin-bottom:1.1rem; }
+.league-header-img { margin-top:1.6rem; }
 .hero-text { padding-bottom:1.8rem; }
 .hero-kicker { color:var(--accent-dark); font-weight:700; font-size:.85rem;
   letter-spacing:.2em; text-transform:uppercase; margin:0 0 .4rem; }

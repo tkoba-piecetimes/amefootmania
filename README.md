@@ -86,10 +86,25 @@ python pipeline/generate_site.py
 5. 本番HTMLで `<meta name="robots">` タグが消えていること、`robots.txt` が
    `Allow: /` に戻っていることを確認する
 
+## 画像クレジット（内部記録・2026-08-27追加）
+
+`assets/` 配下の写真は Pexels（pexels.com）から取得。Pexels Licenseは商用利用可・帰属表示不要
+（サイト上でのクレジット表記は不要）だが、内部記録として出典を残す。いずれも大学アメフトの
+雰囲気に合うフィールド・ボール等の物撮りで、選手の顔が大きく写るもの・NFL等の商標が明確に
+写るものは選定除外している（採用可否の判断過程は各写真ページのライセンス表示で確認済み）。
+
+| ファイル | 用途 | 出典URL | ライセンス |
+| --- | --- | --- | --- |
+| `assets/hero.jpg` | トップページ hero（`build_portal`） | https://www.pexels.com/photo/american-football-ball-26707860/ | Pexels License（商用利用可・帰属不要） |
+| `assets/ogp.png` | OGP/Twitterカード画像（全ページ共通、`page()`内で自動参照） | https://www.pexels.com/photo/a-football-helmet-on-a-field-at-night-28239821/ | Pexels License（商用利用可・帰属不要） |
+| `assets/league-header.jpg` | リーグトップページ（TOP8・BIG8共通）のヘッダー画像（`build_league`） | https://www.pexels.com/photo/black-and-white-football-on-wooden-posts-32963711/ | Pexels License（商用利用可・帰属不要） |
+
+いずれも元画像をトリミング・幅1600px程度にリサイズ・JPEG品質80（`ogp.png`のみPNG化）で圧縮して配置。
+Pexels Licenseの全文: https://www.pexels.com/license/
+
 ## 未実装（今後）
 
 - カスタムドメイン取得・GitHub Pages設定
 - GA4 / Search Console 連携
-- 読みもの記事・用語辞典（content/articles/, content/glossary.json を追加すれば自動で有効化される）
 - /contact ページ（6媒体共通フォーム基盤の実装待ち）
 - 関西学生アメリカンフットボール連盟（第2フェーズ）

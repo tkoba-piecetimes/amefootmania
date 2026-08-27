@@ -1,0 +1,73 @@
+# アメフトマニア — 大学アメフト情報メディア（社内用）
+
+大学アメリカンフットボールの情報メディア「アメフトマニア」（運営: PieceTimes、非公開）。
+rugbymania（C:\Users\tatsu\claudecode\rugbymania）のアーキテクチャを移植した第2弾。
+
+- 公開URL: https://tkoba-piecetimes.github.io/amefootmania/
+  （カスタムドメインは未取得。取得後は pipeline/generate_site.py の SITE_BASE を変更する）
+- 対象: **関東学生アメリカンフットボール連盟（KCFA・https://www.kcfa.jp/）のTOP8・BIG8のみ**
+  （関西・2部以下・医科歯科・7人制は対象外。第2フェーズ候補）
+- 直近シーズン＋過去3シーズン分のデータ、試合ページ、記録室
+
+## 仕組み
+
+```
+kcfa.jp/result_team/?season=YYYY（星取表・過去〜現シーズンのスコア・順位）
+kcfa.jp/result_date/（今シーズンの月別日程・現シーズンのみ有効）
+  → pipeline/fetch_amefoot_kanto.py
+    ※ pipeline/common.py に共通ロジック（fetch）
+    ※ pipeline/team_slugs.py にチーム名→スラッグ対応表
+  → data/leagues/<top8|big8>/
+  → pipeline/generate_site.py
+  → site/
+```
+
+## 実行
+
+```
+python pipeline/fetch_amefoot_kanto.py
+python pipeline/generate_site.py
+```
+
+ローカル確認: `python -m http.server 8941 -d site`
+
+## データソースの詳細（rugbymaniaとの相違点）
+
+- 星取表（result_team）はリーグ区分ごとに `<section class="result_list" id="result_team_N">`
+  ブロックがあり、区分名が「TOP8」「BIG8」を含むものだけ採用する。BIG8は年度によって
+  単一ブロックの年（2024・2025）と、Aブロック/Bブロック→二次上位リーグ/二次チャレンジ
+  リーグに分かれる年（2023・2026）があるため、パーサーは区分名の文字列一致のみで判定し、
+  ブロック構造の違いを吸収している。
+- 勝敗・勝ち点・順位（「順位」列）・最終順位（「順列」列、タイブレーク後の確定順位）は
+  KCFAが算出済みの値をそのまま採用する（自前の順位計算はしない）。得失点差のみ、
+  試合結果から編集部が集計した参考値。
+- 同点でもタイブレークで決着するカードがある（例: 2025年度TOP8 立教大-東京大
+  17-17、東京大がタイブレーク15-13で勝利）。星取表のセルは「21○0」のように
+  自チーム得点/勝敗記号（○●、まれに◯表記ゆれあり）/相手チーム得点の形式で、
+  勝敗記号の方が正なので、スコア比較ではなく記号から勝敗を判定している
+  （fetch側でmatchesに`winner`フィールドとして書き出す）。
+- 日付は試合結果PDFへのリンク（`result_pdf/YYYYMMDD##.pdf`）のファイル名から取得。
+  会場・時間はresult_team側には無い。
+- 当シーズンの「今後の試合」（日程・会場）は result_date/ から補完している
+  （このページは season パラメータを無視して常に現シーズンを表示するため、
+  過去シーズンには使えない）。二次リーグ（BIG8二次上位リーグ等）は一次リーグ終了前
+  「Aブロック1位」等のプレースホルダー名で埋まっており、実チーム名に解決されるまで
+  ブロックごとスキップする。
+
+## サイト方針（rugbymaniaとの相違点）
+
+- ツナカレ（tunakare.jp）連携のCTA・協賛導線は一切設置しない。運営元
+  （PieceTimes/ツナカレ）はサイトのどこにも表示しない（このREADMEのみ内部用として記載）。
+- GA4測定ID・Search Console確認トークンは未発行のため空欄
+  （pipeline/generate_site.py の page() 内にgtag挿入コードをコメントアウトで用意済み。
+  発行後はIDを設定してコメントを解除する）。
+- /contact ページは今回未実装（6媒体共通のフォーム基盤を別トラックで実装中、後日追加）。
+- フッターに出典明記（関東学生アメリカンフットボール連盟へのリンク）。
+
+## 未実装（今後）
+
+- カスタムドメイン取得・GitHub Pages設定
+- GA4 / Search Console 連携
+- 読みもの記事・用語辞典（content/articles/, content/glossary.json を追加すれば自動で有効化される）
+- /contact ページ（6媒体共通フォーム基盤の実装待ち）
+- 関西学生アメリカンフットボール連盟（第2フェーズ）

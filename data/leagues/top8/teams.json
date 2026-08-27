@@ -1,0 +1,42 @@
+{
+ "早稲田大学": {
+  "team": "早稲田大学",
+  "slug": "waseda",
+  "block": "TOP8"
+ },
+ "明治大学": {
+  "team": "明治大学",
+  "slug": "meiji",
+  "block": "TOP8"
+ },
+ "法政大学": {
+  "team": "法政大学",
+  "slug": "hosei",
+  "block": "TOP8"
+ },
+ "東京大学": {
+  "team": "東京大学",
+  "slug": "tokyo-u",
+  "block": "TOP8"
+ },
+ "立教大学": {
+  "team": "立教大学",
+  "slug": "rikkyo",
+  "block": "TOP8"
+ },
+ "中央大学": {
+  "team": "中央大学",
+  "slug": "chuo",
+  "block": "TOP8"
+ },
+ "慶應義塾大学": {
+  "team": "慶應義塾大学",
+  "slug": "keio",
+  "block": "TOP8"
+ },
+ "日本体育大学": {
+  "team": "日本体育大学",
+  "slug": "nittaidai",
+  "block": "TOP8"
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "青山学院大学": {
+  "team": "青山学院大学",
+  "slug": "aoyamagakuin",
+  "block": "BIG8　Aブロック"
+ },
+ "駒澤大学": {
+  "team": "駒澤大学",
+  "slug": "komazawa",
+  "block": "BIG8　Aブロック"
+ },
+ "横浜国立大学": {
+  "team": "横浜国立大学",
+  "slug": "yokohama-kokuritsu",
+  "block": "BIG8　Aブロック"
+ },
+ "専修大学": {
+  "team": "専修大学",
+  "slug": "senshu",
+  "block": "BIG8　Aブロック"
+ },
+ "一橋大学": {
+  "team": "一橋大学",
+  "slug": "hitotsubashi",
+  "block": "BIG8　Aブロック"
+ },
+ "桜美林大学": {
+  "team": "桜美林大学",
+  "slug": "obirin",
+  "block": "BIG8　Bブロック"
+ },
+ "国士舘大学": {
+  "team": "国士舘大学",
+  "slug": "kokushikan",
+  "block": "BIG8　Bブロック"
+ },
+ "明治学院大学": {
+  "team": "明治学院大学",
+  "slug": "meijigakuin",
+  "block": "BIG8　Bブロック"
+ },
+ "東海大学": {
+  "team": "東海大学",
+  "slug": "tokai",
+  "block": "BIG8　Bブロック"
+ },
+ "日本大学": {
+  "team": "日本大学",
+  "slug": "nihon",
+  "block": "BIG8　Bブロック"
+ }
+}

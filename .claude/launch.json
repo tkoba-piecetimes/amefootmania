@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "amefootmania",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8941", "-d", "C:/Users/tatsu/claudecode/amefootmania/site"],
+      "port": 8941
+    }
+  ]
+}

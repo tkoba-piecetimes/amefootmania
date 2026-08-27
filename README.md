@@ -1,10 +1,11 @@
 # アメフトマニア — 大学アメフト情報メディア（社内用）
 
-大学アメリカンフットボールの情報メディア「アメフトマニア」（運営: PieceTimes、非公開）。
+大学アメリカンフットボールの情報メディア「アメフトマニア」。
 rugbymania（C:\Users\tatsu\claudecode\rugbymania）のアーキテクチャを移植した第2弾。
 
 - 公開URL: https://tkoba-piecetimes.github.io/amefootmania/
-  （カスタムドメインは未取得。取得後は pipeline/generate_site.py の SITE_BASE を変更する）
+  （カスタムドメインは未取得。取得後は pipeline/generate_site.py の SITE_BASE を変更する。
+  **現在このURLは下記「暫定noindex」により検索エンジンに非公開**）
 - 対象: **関東学生アメリカンフットボール連盟（KCFA・https://www.kcfa.jp/）のTOP8・BIG8のみ**
   （関西・2部以下・医科歯科・7人制は対象外。第2フェーズ候補）
 - 直近シーズン＋過去3シーズン分のデータ、試合ページ、記録室
@@ -56,13 +57,34 @@ python pipeline/generate_site.py
 
 ## サイト方針（rugbymaniaとの相違点）
 
-- ツナカレ（tunakare.jp）連携のCTA・協賛導線は一切設置しない。運営元
-  （PieceTimes/ツナカレ）はサイトのどこにも表示しない（このREADMEのみ内部用として記載）。
+- 外部サービス連携のCTA・協賛導線は一切設置しない。運営元情報はサイトのどこにも表示しない。
 - GA4測定ID・Search Console確認トークンは未発行のため空欄
   （pipeline/generate_site.py の page() 内にgtag挿入コードをコメントアウトで用意済み。
   発行後はIDを設定してコメントを解除する）。
 - /contact ページは今回未実装（6媒体共通のフォーム基盤を別トラックで実装中、後日追加）。
 - フッターに出典明記（関東学生アメリカンフットボール連盟へのリンク）。
+
+## 暫定noindex（カスタムドメイン取得までの措置・2026-08-27追加）
+
+現在の配信URL（`tkoba-piecetimes.github.io/amefootmania`）はURL自体に運営元を示す
+文字列を含むため、カスタムドメイン取得までの間、検索エンジンに拾われないよう
+以下の2点を有効にしている。
+
+- `pipeline/generate_site.py` の `TEMP_NOINDEX = True`（ファイル冒頭の定数）
+  - `True` の間、生成される全ページの `<head>` に
+    `<meta name="robots" content="noindex, nofollow">` を出力する
+  - `True` の間、`site/robots.txt` を `User-agent: *` / `Disallow: /`（全面クロール拒否）にする
+- 通常時（サイト稼働中の恒常仕様）は、noindexダッシュボード（`dash-am-ops`）以外の
+  全ページがインデックス対象になり、robots.txtも `Allow: /` ＋ sitemap.xml案内になる
+
+**解除手順**（カスタムドメイン設定後）:
+
+1. `pipeline/generate_site.py` の `SITE_BASE` をカスタムドメインのURLに変更
+2. 同ファイルの `TEMP_NOINDEX` を `False` に変更
+3. `python pipeline/generate_site.py` を再実行
+4. 変更を commit・push（push時に Actions が自動デプロイする）
+5. 本番HTMLで `<meta name="robots">` タグが消えていること、`robots.txt` が
+   `Allow: /` に戻っていることを確認する
 
 ## 未実装（今後）
 

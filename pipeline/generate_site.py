@@ -27,6 +27,14 @@ CONTENT = ROOT / "content" / "articles"
 # GitHub Pagesのサブパス配信中の暫定値。カスタムドメイン取得後に変更する。
 SITE_BASE = "https://tkoba-piecetimes.github.io/amefootmania/"
 
+# 暫定noindexフラグ: 現在の配信URLに運営元を示す文字列が含まれるため、
+# カスタムドメイン取得までの間、検索エンジンに拾われないようにする。
+# True の間は (1) 全ページ<head>に <meta name="robots" content="noindex, nofollow">
+# を出力し、(2) site/robots.txt を全面Disallowにする。
+# 解除手順: カスタムドメイン設定後、このフラグを False にして
+# `python pipeline/generate_site.py` を再実行し、変更をコミット・pushする。
+TEMP_NOINDEX = True
+
 # GA4測定ID: 2026-08-27時点で未発行のため空欄。発行後はここにIDを設定し、
 # page() 内のgtag挿入コードのコメントアウトを解除する。
 GA_MEASUREMENT_ID = ""
@@ -293,7 +301,7 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
          subnav="", sitemap=True):
     if sitemap:
         _sitemap_paths.append(path)
-    else:
+    if TEMP_NOINDEX or not sitemap:
         extra_head = '<meta name="robots" content="noindex, nofollow">\n' + extra_head
     desc = desc or "関東の大学アメリカンフットボール（TOP8・BIG8）の試合結果・日程・順位表を毎日更新する情報メディア。"
     url = SITE_BASE + path
@@ -940,8 +948,14 @@ def write_sitemap_and_robots():
         '<?xml version="1.0" encoding="UTF-8"?>'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         + urls + "</urlset>", encoding="utf-8")
-    (SITE / "robots.txt").write_text(
-        f"User-agent: *\nAllow: /\n\nSitemap: {SITE_BASE}sitemap.xml\n", encoding="utf-8")
+    if TEMP_NOINDEX:
+        # カスタムドメイン取得までの暫定措置。現在の配信URL（GitHub Pages）に
+        # 運営元を示す文字列が含まれるため、検索エンジンからのクロールを止める。
+        (SITE / "robots.txt").write_text(
+            "User-agent: *\nDisallow: /\n", encoding="utf-8")
+    else:
+        (SITE / "robots.txt").write_text(
+            f"User-agent: *\nAllow: /\n\nSitemap: {SITE_BASE}sitemap.xml\n", encoding="utf-8")
 
 
 FAVICON = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
@@ -1120,10 +1134,10 @@ if __name__ == "__main__":
 # からの主な変更点:
 #  - 関東（KCFA）単独・TOP8/BIG8の2カテゴリのみ（LEAGUE_ORDER, REGION関連の
 #    分岐を撤去）。関西・九州・地域別グルーピングは存在しない。
-#  - ツナカレ連携のCTA・協賛導線（SPONSOR_*/LISTING_LP_URL/MEDIA_CONTACT_URL/
+#  - 外部サービス連携のCTA・協賛導線（SPONSOR_*/LISTING_LP_URL/MEDIA_CONTACT_URL/
 #    SHUKATSU_URL/CAREER_URL/cv_link/sponsor_block/support_section/
-#    ARTICLE_CTA/article_cta_band）は全て削除。運営元（PieceTimes/ツナカレ）は
-#    サイト本文のどこにも出さない方針のため。
+#    ARTICLE_CTA/article_cta_band）は全て削除。運営元情報はサイト本文の
+#    どこにも出さない方針のため。
 #  - 標準表は「勝-分-敗」→「勝-敗」（KCFAの星取表に引き分け区分がなく、同点は
 #    タイブレークで必ず決着するため）。
 #  - 勝敗判定は home_score/away_score の比較ではなく、fetch_amefoot_kanto.py が
@@ -1143,4 +1157,7 @@ if __name__ == "__main__":
 #  - SITE_BASE は当面 GitHub Pages のURL
 #    （https://tkoba-piecetimes.github.io/amefootmania/）。カスタムドメイン
 #    取得後に変更する。
+#  - TEMP_NOINDEX（2026-08-27追加）: 上記のとおり配信URLに運営元を示す文字列が
+#    含まれるため、カスタムドメイン取得までの暫定措置として全ページnoindex化
+#    ＋robots.txt全面Disallow。解除手順はREADME参照。
 # ---------------------------------------------------------------------------

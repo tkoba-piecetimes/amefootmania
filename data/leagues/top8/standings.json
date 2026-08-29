@@ -1,6 +1,20 @@
 {
  "TOP8": [
   {
+   "team": "明治大学",
+   "slug": "meiji",
+   "points": 3,
+   "wins": 1,
+   "losses": 0,
+   "draws": 0,
+   "games": 1,
+   "rank": null,
+   "order": null,
+   "gf": 14,
+   "ga": 13,
+   "goal_diff": "+1"
+  },
+  {
    "team": "法政大学",
    "slug": "hosei",
    "points": 3,
@@ -55,6 +69,20 @@
    "gf": 13,
    "ga": 38,
    "goal_diff": "-25"
+  },
+  {
+   "team": "慶應義塾大学",
+   "slug": "keio",
+   "points": 0,
+   "wins": 0,
+   "losses": 1,
+   "draws": 0,
+   "games": 1,
+   "rank": null,
+   "order": null,
+   "gf": 13,
+   "ga": 14,
+   "goal_diff": "-1"
   }
  ]
 }

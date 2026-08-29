@@ -1,5 +1,22 @@
 [
  {
+  "id": "2026-08-29-meiji-vs-keio",
+  "date": "2026-08-29",
+  "time": "未定",
+  "category": "TOP8",
+  "home": "明治大学",
+  "away": "慶應義塾大学",
+  "home_slug": "meiji",
+  "away_slug": "keio",
+  "venue": "",
+  "status": "played",
+  "home_score": 14,
+  "away_score": 13,
+  "winner": "home",
+  "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026082901.pdf",
+  "note": ""
+ },
+ {
   "id": "2026-08-28-hosei-vs-chuo",
   "date": "2026-08-28",
   "time": "未定",
@@ -31,23 +48,6 @@
   "away_score": 33,
   "winner": "away",
   "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026082701.pdf",
-  "note": ""
- },
- {
-  "id": "2026-08-29-meiji-vs-keio",
-  "date": "2026-08-29",
-  "time": "未定",
-  "category": "TOP8",
-  "home": "明治大学",
-  "away": "慶應義塾大学",
-  "home_slug": "meiji",
-  "away_slug": "keio",
-  "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "winner": null,
-  "pdf_url": "",
   "note": ""
  },
  {

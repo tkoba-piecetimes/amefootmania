@@ -1,5 +1,22 @@
 [
  {
+  "id": "2026-08-30-waseda-vs-nittaidai",
+  "date": "2026-08-30",
+  "time": "未定",
+  "category": "TOP8",
+  "home": "早稲田大学",
+  "away": "日本体育大学",
+  "home_slug": "waseda",
+  "away_slug": "nittaidai",
+  "venue": "",
+  "status": "played",
+  "home_score": 28,
+  "away_score": 20,
+  "winner": "home",
+  "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026083002.pdf",
+  "note": ""
+ },
+ {
   "id": "2026-08-29-meiji-vs-keio",
   "date": "2026-08-29",
   "time": "未定",
@@ -48,23 +65,6 @@
   "away_score": 33,
   "winner": "away",
   "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026082701.pdf",
-  "note": ""
- },
- {
-  "id": "2026-08-30-waseda-vs-nittaidai",
-  "date": "2026-08-30",
-  "time": "未定",
-  "category": "TOP8",
-  "home": "早稲田大学",
-  "away": "日本体育大学",
-  "home_slug": "waseda",
-  "away_slug": "nittaidai",
-  "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "winner": null,
-  "pdf_url": "",
   "note": ""
  },
  {

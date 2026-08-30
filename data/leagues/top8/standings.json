@@ -1,6 +1,20 @@
 {
  "TOP8": [
   {
+   "team": "早稲田大学",
+   "slug": "waseda",
+   "points": 3,
+   "wins": 1,
+   "losses": 0,
+   "draws": 0,
+   "games": 1,
+   "rank": null,
+   "order": null,
+   "gf": 28,
+   "ga": 20,
+   "goal_diff": "+8"
+  },
+  {
    "team": "明治大学",
    "slug": "meiji",
    "points": 3,
@@ -83,6 +97,20 @@
    "gf": 13,
    "ga": 14,
    "goal_diff": "-1"
+  },
+  {
+   "team": "日本体育大学",
+   "slug": "nittaidai",
+   "points": 0,
+   "wins": 0,
+   "losses": 1,
+   "draws": 0,
+   "games": 1,
+   "rank": null,
+   "order": null,
+   "gf": 20,
+   "ga": 28,
+   "goal_diff": "-8"
   }
  ]
 }

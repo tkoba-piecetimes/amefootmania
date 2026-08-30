@@ -1,1 +1,32 @@
-{}
+{
+ "BIG8　Aブロック": [
+  {
+   "team": "駒澤大学",
+   "slug": "komazawa",
+   "points": 0,
+   "wins": 0,
+   "losses": 1,
+   "draws": 0,
+   "games": 1,
+   "rank": null,
+   "order": null,
+   "gf": 12,
+   "ga": 27,
+   "goal_diff": "-15"
+  },
+  {
+   "team": "専修大学",
+   "slug": "senshu",
+   "points": 3,
+   "wins": 1,
+   "losses": 0,
+   "draws": 0,
+   "games": 1,
+   "rank": null,
+   "order": null,
+   "gf": 27,
+   "ga": 12,
+   "goal_diff": "+15"
+  }
+ ]
+}

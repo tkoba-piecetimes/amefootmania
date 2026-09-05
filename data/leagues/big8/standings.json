@@ -1,6 +1,20 @@
 {
  "BIG8　Aブロック": [
   {
+   "team": "青山学院大学",
+   "slug": "aoyamagakuin",
+   "points": 3,
+   "wins": 1,
+   "losses": 0,
+   "draws": 0,
+   "games": 1,
+   "rank": null,
+   "order": null,
+   "gf": 25,
+   "ga": 18,
+   "goal_diff": "+7"
+  },
+  {
    "team": "駒澤大学",
    "slug": "komazawa",
    "points": 0,
@@ -27,6 +41,20 @@
    "gf": 27,
    "ga": 12,
    "goal_diff": "+15"
+  },
+  {
+   "team": "一橋大学",
+   "slug": "hitotsubashi",
+   "points": 0,
+   "wins": 0,
+   "losses": 1,
+   "draws": 0,
+   "games": 1,
+   "rank": null,
+   "order": null,
+   "gf": 18,
+   "ga": 25,
+   "goal_diff": "-7"
   }
  ]
 }

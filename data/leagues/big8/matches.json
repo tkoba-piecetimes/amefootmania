@@ -1,5 +1,22 @@
 [
  {
+  "id": "2026-09-05-aoyamagakuin-vs-hitotsubashi",
+  "date": "2026-09-05",
+  "time": "未定",
+  "category": "BIG8　Aブロック",
+  "home": "青山学院大学",
+  "away": "一橋大学",
+  "home_slug": "aoyamagakuin",
+  "away_slug": "hitotsubashi",
+  "venue": "",
+  "status": "played",
+  "home_score": 25,
+  "away_score": 18,
+  "winner": "home",
+  "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026090501.pdf",
+  "note": ""
+ },
+ {
   "id": "2026-08-30-komazawa-vs-senshu",
   "date": "2026-08-30",
   "time": "未定",
@@ -14,23 +31,6 @@
   "away_score": 27,
   "winner": "away",
   "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026083001.pdf",
-  "note": ""
- },
- {
-  "id": "2026-09-05-aoyamagakuin-vs-hitotsubashi",
-  "date": "2026-09-05",
-  "time": "未定",
-  "category": "BIG8　Aブロック",
-  "home": "青山学院大学",
-  "away": "一橋大学",
-  "home_slug": "aoyamagakuin",
-  "away_slug": "hitotsubashi",
-  "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "winner": null,
-  "pdf_url": "",
   "note": ""
  },
  {

@@ -44,13 +44,28 @@ GSC_VERIFICATION = ""
 
 SITE_NAME = "アメフトマニア"
 
-# 注意: このサイトは既存方針として「運営元情報はサイト本文のどこにも出さない」ため
-# 外部連携CTA（SPONSOR_*/LISTING_LP_URL/SHUKATSU_URL/CAREER_URL等）を全て撤去済み
-# （本ファイル末尾のコメント参照）。下記 INTERN_URL / intern_cta_band() は
-# 2026-09-12の依頼で「部活メディア7媒体すべてに記事末インターンCTAを追加」に
-# 従い実装したものだが、上記の既存方針と矛盾する（tunakare.jpのサブドメインへの
-# 外部リンクを含む＝運営元が透けて見える）。マージ前に方針の扱いを要確認。
-INTERN_URL = "https://intern.tunakare.jp/assessment?utm_source=amefootmania&utm_medium=cta&utm_campaign=intern"  # 学生集客戦略v2 §4 チャネル2（2026-09-12）。要方針確認
+# ---- ツナカレ接続導線（部活メディア→ツナカレ接続設計 2026-08 D2改訂版）
+# 2026-09-12 木場さん決定: 「アメフトは他競技同様ツナカレ色を出していこう」。
+# 従来方針（下記「外部連携CTAは一切設置しない・運営元情報は出さない」）を撤回し、
+# 他6媒体（baseballmania/soccermania/rowingmania/yachtmania/rugbymania/
+# lacrossemania）と同一のツナカレ導線（協賛CTA・学生団体向けLP・就活相談・
+# ガクチカテンプレ・企業向け採用ガイド・取材依頼・記事末CTA帯・スマホsticky
+# バー・お問い合わせフォーム）を実装する。旧方針で撤去していた経緯は本ファイル
+# 末尾の変更点メモ参照。
+_UTM = "utm_source=amefootmania&utm_medium=referral"
+SPONSOR_CTA_URL = f"https://tunakare.jp/?{_UTM}&utm_campaign=sponsor"  # 「応援できる部活を探す」先（cv_sponsor_click後方互換）
+LISTING_LP_URL = f"https://lp.tunakare.jp/s01/?{_UTM}&utm_campaign=listing"  # 学生団体向けLP（協賛募集の無料掲載）
+MEDIA_CONTACT_URL = f"https://media.tunakare.jp/contact/student/?{_UTM}&utm_campaign=media-pr"  # 取材依頼（汎用問い合わせ）
+SHUKATSU_URL = f"https://shukatsu.tunakare.jp/?{_UTM}&utm_campaign=shukatsu"  # 学生個人の就活相談
+CAREER_URL = f"https://career.tunakare.jp/?{_UTM}&utm_campaign=career"  # OB/OG向け転職・キャリア相談
+BIZ_GUIDE_URL = f"https://career.tunakare.jp/biz/guide?{_UTM}&utm_campaign=biz-guide"  # 企業向け採用ガイド資料DL
+SPORT_NAME = "アメフト"  # 学生向け導線の競技名
+GAKUCHIKA_URL = f"https://shukatsu.tunakare.jp/download/gakuchika-template?{_UTM}&utm_campaign=gakuchika-template"  # 競技別ガクチカテンプレ資料DL
+INTERN_URL = "https://intern.tunakare.jp/assessment?utm_source=amefootmania&utm_medium=cta&utm_campaign=intern"  # ツナカレインターン16タイプ診断（学生集客戦略v2 §4 チャネル2・2026-09-12）
+
+# ---- お問い合わせ（中立リレーAPI経由・運営元秘匿。メディアSNS統合要件定義_2026-08 §3-1）
+CONTACT_MEDIA_KEY = "amefoot"
+CONTACT_RELAY_URL = "https://mania-contact.vercel.app/api/contact"
 
 WEEKDAYS_JP = ["月", "火", "水", "木", "金", "土", "日"]
 LEAGUE_ORDER = ["top8", "big8"]
@@ -295,6 +310,7 @@ NAV_ITEMS = [
     ("matches/index.html", "試合・結果"), ("index.html#leagues", "リーグ"),
     ("articles/index.html", "読みもの"), ("archive/index.html", "データベース"),
     ("articles/american-football-watching-guide/index.html", "観戦ガイド"), ("myteam/index.html", "マイチーム"),
+    ("contact/index.html", "お問い合わせ"),
 ]
 
 
@@ -309,7 +325,7 @@ def league_subnav(lg, L):
 
 
 def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="website",
-         subnav="", sitemap=True):
+         subnav="", sitemap=True, sticky=""):
     if sitemap:
         _sitemap_paths.append(path)
     if TEMP_NOINDEX or not sitemap:
@@ -328,6 +344,7 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
     #           '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
     #           f"gtag('js',new Date());gtag('config','{GA_MEASUREMENT_ID}');</script>")
     nav = "".join(f'<a href="{rel}{href}">{label}</a>' for href, label in NAV_ITEMS)
+    body_class = ' class="has-sticky-cta"' if sticky else ""
     if "sources" in meta:
         src_html = " / ".join(
             f'<a href="{escape(s["url"])}">{escape(s["label"])}</a>' for s in meta["sources"])
@@ -352,7 +369,7 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
 <link rel="stylesheet" href="{rel}assets/experience.css">
 <script defer src="{rel}assets/experience.js"></script>
 </head>
-<body>
+<body{body_class}>
 <a class="skip-link" href="#main-content">本文へスキップ</a>
 <header class="site-header">
   <div class="header-inner">
@@ -373,6 +390,8 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
     <p>{SITE_NAME}は関東の大学アメリカンフットボールの情報メディアです。掲載の順位・勝ち点・成績は関東学生アメリカンフットボール連盟（KCFA）が公表する星取表の値をそのまま掲載しています。</p>
   </div>
 </footer>
+{sticky}
+{CTA_VIEW_SCRIPT}
 </body>
 </html>"""
 
@@ -434,22 +453,143 @@ def article_card(a, rel):
             f'<p class="note">{escape(a["description"])}</p></div>')
 
 
+# ---------------------------------------------------------------- tunakare CTA components
+
+def cta_lane(label, url, event, *, outline=False, position="sponsor_block"):
+    """ツナカレ系リンク1本分（「PR」表記・rel=noopener sponsored・GA4イベント発火）。
+    data-cta/data-position はD: CTA表示回数計測（IntersectionObserver）用。
+    他6媒体（baseballmania等）と同一パターン。"""
+    cls = "cta cta-outline" if outline else "cta"
+    return (f'<p class="sponsor-lane" data-cta="{escape(event)}" data-position="{escape(position)}">'
+            f'<span class="pr-tag">PR</span>'
+            f'<a class="{cls}" href="{escape(url)}" target="_blank" rel="noopener sponsored" '
+            f'onclick="window.gtag&&gtag(\'event\',\'{event}\')">{escape(label)} →</a></p>')
+
+
+def sponsor_block():
+    """D2改訂版: チームページの応援ブロック。全チーム共通の汎用導線を表示する。
+
+    個別部活への協賛ページ直リンク・団体名表示は行わない（募集中の部活はツナカレに
+    遷移して初めてわかる設計。案件には締切・停止があり静的サイト側に募集状況を持つと
+    管理不能になるため）。
+    """
+    body = '<section class="sponsor"><h2>この部活を応援する</h2>'
+    body += cta_lane("この部活・競技を応援したい方へ: ツナカレで協賛募集中の部活を探す", SPONSOR_CTA_URL, "cv_sponsor_click")
+    body += cta_lane(f"{SPORT_NAME}部のガクチカ、書き方テンプレ＆例文集（無料PDF）を受け取る", GAKUCHIKA_URL,
+                      "cv_gakuchika_click")
+    body += cta_lane("この部の学生の方へ: 部活と両立できる就活相談（無料・メールで回答）", SHUKATSU_URL,
+                      "cv_shukatsu_click", outline=True)
+    body += cta_lane("体育会学生の採用を検討中の企業の方へ: 体育会学生採用ガイド2026（無料資料）", BIZ_GUIDE_URL,
+                      "cv_guide_click", outline=True)
+    body += cta_lane("この部の関係者の方へ: 協賛募集を無料で掲載", LISTING_LP_URL,
+                      "cv_listing_click", outline=True)
+    body += cta_lane("取材してほしい部活を募集中", MEDIA_CONTACT_URL, "cv_media_pr_click", outline=True)
+    body += '</section>'
+    return body
+
+
+CTA_BANDS = {
+    "shukatsu": (f"{SPORT_NAME}部のガクチカ、テンプレ＆例文集を受け取る", "書き方テンプレ＆例文集（無料PDF）をプレゼント。",
+                 GAKUCHIKA_URL, "cv_gakuchika_click"),
+    "career": ("体育会出身の転職・キャリア相談", "OB・OG向けのキャリア相談。", CAREER_URL, "cv_career_click"),
+    "listing": ("遠征費・運営資金に。協賛募集を無料掲載", "部活の運営者の方へ。", LISTING_LP_URL, "cv_listing_click"),
+    "sponsor": ("この部活・競技を応援したい方へ", "協賛・応援はこちらから。", SPONSOR_CTA_URL, "cv_sponsor_click"),
+}
+
+# 他6媒体と同じ運用: 部活記事（自動生成・cta: sponsor）はプラットフォーム（協賛）
+# または取材の導線のみにする（学生向け就活相談の副帯は出さず、取材募集の副帯を添える）。
+_MEDIA_PR_BAND = ("取材してほしい部活を募集中", "あなたの部活・チームを取材してほしい方はこちらから。",
+                   MEDIA_CONTACT_URL, "cv_media_pr_click")
+
+
+def cta_band(cta_value):
+    """記事frontmatterの cta: フィールドに応じた記事末尾CTA帯（none/未指定は非表示）。
+
+    cta: sponsor の記事はプラットフォーム（協賛）または取材の導線のみにする
+    （学生向け就活相談の副帯は出さず、取材募集の副帯を添える）。
+    cta: shukatsu の記事は主帯が競技別ガクチカ資料DLになる（CTA_BANDS参照）。
+    """
+    value = (cta_value or "").strip()
+    info = CTA_BANDS.get(value)
+    if not info:
+        return ""
+    heading, sub, url, event = info
+    band = (f'<section class="cta-band" data-cta="{escape(event)}" data-position="cta_band">'
+            '<span class="pr-tag">PR</span>'
+            f'<p class="cta-band-text"><strong>{escape(heading)}</strong><br>{escape(sub)}</p>'
+            f'<a class="cta" href="{escape(url)}" target="_blank" rel="noopener sponsored" '
+            f'onclick="window.gtag&&gtag(\'event\',\'{event}\')">詳しく見る →</a></section>')
+    if value == "sponsor":
+        s_heading, s_sub, s_url, s_event = _MEDIA_PR_BAND
+        band += (f'<section class="cta-band cta-band-sub" data-cta="{escape(s_event)}" data-position="cta_band">'
+                 '<span class="pr-tag">PR</span>'
+                 f'<p class="cta-band-text"><strong>{escape(s_heading)}</strong><br>{escape(s_sub)}</p>'
+                 f'<a class="cta cta-outline" href="{escape(s_url)}" target="_blank" rel="noopener sponsored" '
+                 f'onclick="window.gtag&&gtag(\'event\',\'{s_event}\')">詳しく見る →</a></section>')
+    return band
+
+
 def intern_cta_band():
     """記事末尾に常時1つ表示する、ツナカレインターン16タイプ診断への導線CTA帯。
+    cta_band()（記事frontmatterのcta:に応じた既存CTA）とは独立・常時表示で、その直後に置く。
     学生集客の戦略設計v2（tsunakare-intern/docs/business/27_student-acquisition-v2.md）
-    §4 チャネル2（部活メディア）・§5 メッセージ体系（S2低学年向け）2026-09-12の依頼で実装。
-    注意: このサイトは「運営元情報はサイト本文のどこにも出さない」方針で他の外部CTAを
-    全て撤去済み（SITE_NAME定義付近のコメント・本ファイル末尾の変更点メモ参照）。
-    本関数はその方針と矛盾するため、マージ前に方針の扱いを要確認。
-    左の縦線装飾（border-left）は使わず、紺地の帯で視覚的に区別する。
+    §4 チャネル2（部活メディア）・§5 メッセージ体系（S2低学年向け）2026-09-12。
+    左の縦線装飾（cta-bandのborder-left）は使わず、紺地の帯で視覚的に区別する。
     """
     heading = "オフシーズン・引退後に、長期インターンという選択"
     sub = "部活で培った力を実務で試す。16タイプ診断（30秒）で合う企業がわかります。"
     return (f'<section class="intern-cta-band" data-cta="cv_intern_click" data-position="intern_cta_band">'
-            '<span class="pr-tag-light">PR</span>'
+            '<span class="pr-tag pr-tag-light">PR</span>'
             f'<p class="intern-cta-band-text"><strong>{escape(heading)}</strong><br>{escape(sub)}</p>'
             f'<a class="cta" href="{escape(INTERN_URL)}" rel="noopener" '
             'onclick="window.gtag&&gtag(\'event\',\'cv_intern_click\')">16タイプ診断を受ける →</a></section>')
+
+
+def sticky_bar():
+    """スマホ幅（768px未満）専用の画面下固定バー。CSSで768px以上は非表示。
+    閉じるとsessionStorageに記録しそのセッション中は再表示しない（CTA_VIEW_SCRIPT側で処理）。
+    """
+    return ('<div class="sticky-cta" id="sticky-cta" data-cta="cv_gakuchika_click" data-position="sticky">'
+            '<span class="pr-tag">PR</span>'
+            f'<span class="sticky-cta-text">{escape(SPORT_NAME)}部のガクチカ テンプレ＆例文集（無料PDF）</span>'
+            f'<a class="cta" href="{escape(GAKUCHIKA_URL)}" target="_blank" rel="noopener sponsored" '
+            'onclick="window.gtag&&gtag(\'event\',\'cv_gakuchika_click\')">受け取る</a>'
+            '<button type="button" class="sticky-cta-close" aria-label="閉じる" '
+            'onclick="window.__dismissStickyCta&&window.__dismissStickyCta()">×</button>'
+            '</div>')
+
+
+CTA_VIEW_SCRIPT = """<script>
+(function () {
+  var KEY = 'gakuchika_sticky_dismissed';
+  var bar = document.getElementById('sticky-cta');
+  function dismissStickyCta() {
+    if (!bar) return;
+    bar.style.display = 'none';
+    document.body.classList.remove('has-sticky-cta');
+    try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
+  }
+  window.__dismissStickyCta = dismissStickyCta;
+  if (bar) {
+    var dismissed = false;
+    try { dismissed = sessionStorage.getItem(KEY) === '1'; } catch (e) {}
+    if (dismissed) { dismissStickyCta(); }
+  }
+  if ('IntersectionObserver' in window) {
+    var seen = new WeakSet();
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && !seen.has(entry.target)) {
+          seen.add(entry.target);
+          var el = entry.target;
+          window.gtag && gtag('event', 'cta_view', { cta: el.dataset.cta, position: el.dataset.position });
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-cta]').forEach(function (el) { observer.observe(el); });
+  }
+})();
+</script>"""
 
 
 def h2h_section(m, matches_by_year):
@@ -684,11 +824,12 @@ def build_league(lg, articles):
                 for a in articles[:3])
             body += (f'<section><h2>読みもの</h2><ul>{art_links}</ul>'
                      f'<p class="more"><a href="{R}articles/index.html">読みもの一覧へ →</a></p></section>')
+        body += sponsor_block()
         write_page(f"{code}/clubs/{slug}",
                    page(R, f'{name} 試合結果・日程・戦績 | {SITE_NAME}', body, meta,
                         path=f"{code}/clubs/{slug}/",
                         desc=f'{name}の試合結果・今後の日程・戦績。{league_name}所属。',
-                        subnav=sub))
+                        subnav=sub, sticky=sticky_bar()))
 
     # ---- match pages
     for m in matches:
@@ -847,11 +988,13 @@ def build_articles(articles, meta):
                  f' <span class="note">{escape(a["date"])}</span></p>')
         body += f'<h1>{escape(a["title"])}</h1>'
         body += f'<div class="article">{md_to_html(a["body"])}</div>'
+        body += cta_band(a.get("cta"))
         body += intern_cta_band()
         body += f'<section><h2>あわせて読む</h2><ul>{related}</ul></section>'
         write_page(f"articles/{a['slug']}",
                    page(rel, f'{a["title"]} | {SITE_NAME}', body, meta,
-                        path=f'articles/{a["slug"]}/', desc=a["description"], og_type="article"))
+                        path=f'articles/{a["slug"]}/', desc=a["description"], og_type="article",
+                        sticky=sticky_bar()))
 
 
 def build_glossary(meta):
@@ -875,6 +1018,101 @@ def build_glossary(meta):
                page(rel, f"アメフト用語辞典（ルール・ポジション・技術用語） | {SITE_NAME}", body, meta,
                     path="glossary/",
                     desc="大学アメリカンフットボールの用語を分野別に解説。観戦・新入生・保護者向けの用語集。"))
+
+
+# ---------------------------------------------------------------- contact
+
+CONTACT_FORM_HTML = """<noscript><p class="form-message">このフォームのご利用にはJavaScriptの有効化が必要です。</p></noscript>
+<form id="contact-form" class="contact-form">
+  <div class="form-row">
+    <label for="cf-name">お名前<span class="req">必須</span></label>
+    <input type="text" id="cf-name" name="name" required autocomplete="name">
+  </div>
+  <div class="form-row">
+    <label for="cf-affiliation">ご所属</label>
+    <input type="text" id="cf-affiliation" name="affiliation" autocomplete="organization">
+  </div>
+  <div class="form-row">
+    <label for="cf-email">メールアドレス<span class="req">必須</span></label>
+    <input type="email" id="cf-email" name="email" required autocomplete="email">
+  </div>
+  <div class="form-row">
+    <label for="cf-type">種別<span class="req">必須</span></label>
+    <select id="cf-type" name="type" required>
+      <option value="">選択してください</option>
+      <option value="取材・情報提供">取材・情報提供</option>
+      <option value="掲載・広告のご相談">掲載・広告のご相談</option>
+      <option value="その他">その他</option>
+    </select>
+  </div>
+  <div class="form-row">
+    <label for="cf-body">内容<span class="req">必須</span></label>
+    <textarea id="cf-body" name="body" rows="7" required></textarea>
+  </div>
+  <div class="hp-field" aria-hidden="true">
+    <label for="cf-website">ウェブサイト</label>
+    <input type="text" id="cf-website" name="website" tabindex="-1" autocomplete="off">
+  </div>
+  <button type="submit" id="cf-submit" class="cta">送信する</button>
+</form>
+<p id="cf-message" class="form-message" role="status" aria-live="polite"></p>"""
+
+CONTACT_FORM_JS = """<script>
+(function () {
+  var form = document.getElementById('contact-form');
+  if (!form) return;
+  var msg = document.getElementById('cf-message');
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var payload = {
+      mediaKey: '__MEDIA_KEY__',
+      name: form.name.value,
+      affiliation: form.affiliation.value,
+      email: form.email.value,
+      type: form.type.value,
+      body: form.body.value,
+      website: form.website.value
+    };
+    var elements = form.elements;
+    var i;
+    for (i = 0; i < elements.length; i++) { elements[i].disabled = true; }
+    msg.textContent = '';
+    msg.className = 'form-message';
+    fetch('__RELAY_URL__', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function (res) {
+      return res.json().catch(function () { return { ok: false }; });
+    }).then(function (data) {
+      if (data && data.ok) {
+        form.style.display = 'none';
+        msg.textContent = '送信しました。3営業日以内にご返信します。';
+        msg.className = 'form-message form-message-ok';
+      } else {
+        throw new Error('failed');
+      }
+    }).catch(function () {
+      msg.textContent = '送信に失敗しました。時間をおいてお試しください。';
+      msg.className = 'form-message form-message-error';
+      for (i = 0; i < elements.length; i++) { elements[i].disabled = false; }
+    });
+  });
+})();
+</script>"""
+
+
+def build_contact(meta):
+    rel = "../"
+    body = ('<h1>お問い合わせ</h1>'
+            '<p class="lead">取材・情報提供、掲載・広告のご相談を受け付けています。'
+            '3営業日以内にメールでご返信します。</p>')
+    body += CONTACT_FORM_HTML
+    body += CONTACT_FORM_JS.replace("__MEDIA_KEY__", CONTACT_MEDIA_KEY).replace("__RELAY_URL__", CONTACT_RELAY_URL)
+    write_page("contact",
+               page(rel, f"お問い合わせ | {SITE_NAME}", body, meta,
+                    path="contact/",
+                    desc=f"{SITE_NAME}への取材・情報提供、掲載・広告のご相談はこちらから。"))
 
 
 def build_videos(meta):
@@ -1093,12 +1331,26 @@ table.detail td { white-space:normal; }
 .cta-outline { background:transparent; color:var(--navy-2); border:1.5px solid var(--navy-2); }
 .cta-outline:hover { background:var(--navy-2); color:#fff; }
 
+.pr-tag { display:inline-block; background:var(--navy); color:#fff; font-size:.62rem;
+  font-weight:800; letter-spacing:.05em; padding:.15em .5em; border-radius:4px;
+  vertical-align:middle; margin-right:.55em; }
+.sponsor-lane { margin:.7rem 0; }
+
+.support-card { display:flex; flex-direction:column; align-items:flex-start; gap:.3rem; }
+.support-card .pr-tag { margin:0 0 .2rem; }
+.support-card h3 { margin:0; font-size:.95rem; }
+.support-card .note { margin:0 0 .3rem; }
+.support-card .cta { margin-top:auto; }
+
+.cta-band { display:flex; flex-wrap:wrap; align-items:center; gap:.6rem 1.2rem;
+  background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--navy);
+  border-radius:12px; padding:1rem 1.2rem; margin-top:1.6rem; box-shadow:0 1px 3px rgba(14,31,61,.06); }
+.cta-band-text { margin:0; font-size:.85rem; flex:1 1 220px; }
+
 .intern-cta-band { display:flex; flex-wrap:wrap; align-items:center; gap:.6rem 1.2rem;
   background:var(--navy); border-radius:12px; padding:1.1rem 1.3rem; margin-top:1.6rem; }
 .intern-cta-band-text { margin:0; font-size:.85rem; flex:1 1 220px; color:#fff; }
-.pr-tag-light { display:inline-block; background:var(--accent); color:var(--navy); font-size:.62rem;
-  font-weight:800; letter-spacing:.05em; padding:.15em .5em; border-radius:4px;
-  vertical-align:middle; margin-right:.55em; }
+.pr-tag-light { background:var(--accent); color:var(--navy); }
 
 .stat-row { display:flex; gap:.8rem; flex-wrap:wrap; }
 .stat { background:var(--surface); border:1px solid var(--line); border-radius:12px;
@@ -1135,6 +1387,38 @@ table.detail td { white-space:normal; }
 .footer-nav { display:flex; gap:1rem; margin:.2rem 0 .8rem; }
 .footer-nav a { color:#c3d1e0; text-decoration:none; }
 .site-footer a { color:#c3d1e0; }
+
+.contact-form { max-width:32rem; margin-top:1.2rem; }
+.form-row { margin-bottom:1.1rem; display:flex; flex-direction:column; gap:.35rem; }
+.form-row label { font-weight:700; font-size:.85rem; color:var(--navy); }
+.form-row .req { display:inline-block; margin-left:.4em; font-size:.68rem; font-weight:700;
+  color:#fff; background:var(--accent-dark); border-radius:4px; padding:.05em .4em; vertical-align:middle; }
+.form-row input, .form-row select, .form-row textarea {
+  font:inherit; padding:.55em .7em; border:1px solid var(--line); border-radius:8px;
+  background:var(--surface); color:var(--ink); width:100%; }
+.form-row textarea { resize:vertical; }
+.form-row input:focus, .form-row select:focus, .form-row textarea:focus {
+  outline:2px solid var(--accent); outline-offset:1px; }
+.hp-field { position:absolute; left:-9999px; top:-9999px; width:1px; height:1px; overflow:hidden; }
+button.cta { border:none; font:inherit; cursor:pointer; }
+button.cta:disabled { opacity:.55; cursor:default; }
+.form-message { margin-top:1rem; font-weight:700; }
+.form-message-ok { color:var(--win, #15803d); }
+.form-message-error { color:var(--loss, #b91c1c); }
+
+.sticky-cta { display:none; }
+@media (max-width:767px) {
+  body.has-sticky-cta { padding-bottom:3.8rem; }
+  .sticky-cta { display:flex; align-items:center; gap:.5rem; position:fixed; left:0; right:0;
+    bottom:0; z-index:60; background:var(--surface); border-top:1px solid var(--line);
+    padding:.55em .7em; box-shadow:0 -2px 10px rgba(14,31,61,.12); }
+  .sticky-cta .pr-tag { flex-shrink:0; margin-right:0; }
+  .sticky-cta-text { flex:1 1 auto; font-size:.72rem; font-weight:700; color:var(--navy);
+    line-height:1.3; }
+  .sticky-cta .cta { flex-shrink:0; padding:.45em .9em; font-size:.78rem; white-space:nowrap; }
+  .sticky-cta-close { flex-shrink:0; background:none; border:none; font-size:1.15rem;
+    line-height:1; color:var(--sub); cursor:pointer; padding:.2em .35em; }
+}
 """
 
 
@@ -1166,6 +1450,7 @@ def main():
     build_articles(articles, global_meta)
     build_videos(global_meta)
     build_glossary(global_meta)
+    build_contact(global_meta)
     build_dashboard(leagues, articles, global_meta)
     write_sitemap_and_robots()
 
@@ -1183,8 +1468,13 @@ if __name__ == "__main__":
 #    分岐を撤去）。関西・九州・地域別グルーピングは存在しない。
 #  - 外部サービス連携のCTA・協賛導線（SPONSOR_*/LISTING_LP_URL/MEDIA_CONTACT_URL/
 #    SHUKATSU_URL/CAREER_URL/cv_link/sponsor_block/support_section/
-#    ARTICLE_CTA/article_cta_band）は全て削除。運営元情報はサイト本文の
-#    どこにも出さない方針のため。
+#    ARTICLE_CTA/article_cta_band）は当初すべて削除していた（運営元情報はサイト
+#    本文のどこにも出さない方針のため）。
+#    → 2026-09-12 木場さん決定「アメフトは他競技同様ツナカレ色を出していこう」に
+#    より方針を撤回し、他6媒体（baseballmania/soccermania/rowingmania/
+#    yachtmania/rugbymania/lacrossemania）と同一のツナカレ導線
+#    （cta_lane/sponsor_block/CTA_BANDS/cta_band/intern_cta_band/sticky_bar/
+#    build_contact）を再実装した。詳細はSITE_NAME定義付近のコメント参照。
 #  - 標準表は「勝-分-敗」→「勝-敗」（KCFAの星取表に引き分け区分がなく、同点は
 #    タイブレークで必ず決着するため）。
 #  - 勝敗判定は home_score/away_score の比較ではなく、fetch_amefoot_kanto.py が

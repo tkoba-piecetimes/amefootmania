@@ -284,7 +284,9 @@ def md_to_html(md):
 # ---------------------------------------------------------------- page shell
 
 NAV_ITEMS = [
-    ("index.html", "トップ"),
+    ("matches/index.html", "試合・結果"), ("index.html#leagues", "リーグ"),
+    ("articles/index.html", "読みもの"), ("archive/index.html", "データベース"),
+    ("articles/american-football-watching-guide/index.html", "観戦ガイド"), ("myteam/index.html", "マイチーム"),
 ]
 
 
@@ -339,8 +341,11 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
 <link rel="canonical" href="{escape(url)}">
 {extra_head}{ga}
 <link rel="stylesheet" href="{rel}style.css">
+<link rel="stylesheet" href="{rel}assets/experience.css">
+<script defer src="{rel}assets/experience.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">本文へスキップ</a>
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="{rel}index.html"><span class="brand-tick"></span>{SITE_NAME}<span class="brand-sub">KANTO COLLEGE FOOTBALL</span></a>
@@ -348,7 +353,7 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
   </div>
 </header>
 {subnav}
-<main>
+<main id="main-content">
 {body}
 </main>
 <footer class="site-footer">
@@ -403,7 +408,7 @@ def match_rows_table(ms, L, league_label=None, league_code=None):
 
 def standings_table(block, entries, L):
     rows = "".join(
-        f'<tr><td class="rank">{e["rank"]}</td>'
+        f'<tr><td class="rank">{e["rank"] if e["rank"] is not None else "—"}</td>'
         f'<td><a href="{L}clubs/{e["slug"]}/index.html">{escape(e["team"])}</a></td>'
         f'<td><strong>{e["points"]}</strong></td><td>{e["games"]}</td>'
         f'<td>{e["wins"]}-{e["losses"]}</td>'
@@ -615,7 +620,7 @@ def build_league(lg, articles):
         body += f'<p class="lead">{escape(league_name)} 所属。</p>'
         if entry:
             body += ('<section><h2>現在の戦績</h2><div class="stat-row">'
-                     f'<div class="stat"><span class="num">{entry["rank"]}</span>位</div>'
+                     f'<div class="stat"><span class="num">{entry["rank"] if entry["rank"] is not None else "—"}</span>位</div>'
                      f'<div class="stat"><span class="num">{entry["points"]}</span>勝ち点</div>'
                      f'<div class="stat"><span class="num">{entry["wins"]}-{entry["losses"]}</span>勝-敗</div>'
                      f'<div class="stat"><span class="num">{escape(str(entry["goal_diff"]))}</span>得失点差</div>'
@@ -1120,7 +1125,8 @@ def main():
         for f in ASSETS.iterdir():
             shutil.copy(f, SITE / "assets" / f.name)
 
-    build_portal(leagues, articles, global_meta)
+    import experience, sys
+    experience.build(sys.modules[__name__], leagues, articles, global_meta)
     for lg in leagues:
         build_league(lg, articles)
     build_articles(articles, global_meta)

@@ -57,11 +57,16 @@ python pipeline/generate_site.py
 
 ## サイト方針（rugbymaniaとの相違点）
 
-- 外部サービス連携のCTA・協賛導線は一切設置しない。運営元情報はサイトのどこにも表示しない。
+- 2026-09-12 木場さん決定「アメフトは他競技同様ツナカレ色を出していこう」により、
+  当初の「外部サービス連携のCTA・協賛導線は一切設置しない・運営元情報は出さない」
+  という方針を撤回。他6媒体（baseballmania/soccermania/rowingmania/yachtmania/
+  rugbymania/lacrossemania）と同一のツナカレ導線（協賛CTA・学生団体向けLP・
+  就活相談・ガクチカテンプレ・企業向け採用ガイド・取材依頼・記事末CTA帯・
+  スマホstickyバー・お問い合わせフォーム）を実装済み（pipeline/generate_site.py）。
 - GA4測定ID・Search Console確認トークンは未発行のため空欄
   （pipeline/generate_site.py の page() 内にgtag挿入コードをコメントアウトで用意済み。
   発行後はIDを設定してコメントを解除する）。
-- /contact ページは今回未実装（6媒体共通のフォーム基盤を別トラックで実装中、後日追加）。
+- /contact ページ実装済み（6媒体共通のフォーム基盤 mania-contact 経由。mediaKey=`amefoot`）。
 - フッターに出典明記（関東学生アメリカンフットボール連盟へのリンク）。
 
 ## 暫定noindex（カスタムドメイン取得までの措置・2026-08-27追加、同日ドメイン切替済み）
@@ -104,7 +109,6 @@ NFL等の商標が明確に写るものは選定除外という基準で採用�
 ## 未実装（今後）
 
 - GA4 / Search Console 連携
-- /contact ページ（6媒体共通フォーム基盤の実装待ち）
 - 関西学生アメリカンフットボール連盟（第2フェーズ）
 
 ## ドメイン切替（2026-08-27）

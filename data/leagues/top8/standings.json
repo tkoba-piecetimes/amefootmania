@@ -3,16 +3,16 @@
   {
    "team": "早稲田大学",
    "slug": "waseda",
-   "points": 3,
-   "wins": 1,
+   "points": 6,
+   "wins": 2,
    "losses": 0,
    "draws": 0,
-   "games": 1,
+   "games": 2,
    "rank": null,
    "order": null,
-   "gf": 28,
-   "ga": 20,
-   "goal_diff": "+8"
+   "gf": 63,
+   "ga": 27,
+   "goal_diff": "+36"
   },
   {
    "team": "明治大学",
@@ -47,14 +47,14 @@
    "slug": "tokyo-u",
    "points": 0,
    "wins": 0,
-   "losses": 1,
+   "losses": 2,
    "draws": 0,
-   "games": 1,
+   "games": 2,
    "rank": null,
    "order": null,
-   "gf": 20,
-   "ga": 33,
-   "goal_diff": "-13"
+   "gf": 30,
+   "ga": 64,
+   "goal_diff": "-34"
   },
   {
    "team": "立教大学",
@@ -73,30 +73,30 @@
   {
    "team": "中央大学",
    "slug": "chuo",
-   "points": 0,
-   "wins": 0,
+   "points": 3,
+   "wins": 1,
    "losses": 1,
    "draws": 0,
-   "games": 1,
+   "games": 2,
    "rank": null,
    "order": null,
-   "gf": 13,
-   "ga": 38,
-   "goal_diff": "-25"
+   "gf": 44,
+   "ga": 48,
+   "goal_diff": "-4"
   },
   {
    "team": "慶應義塾大学",
    "slug": "keio",
    "points": 0,
    "wins": 0,
-   "losses": 1,
+   "losses": 2,
    "draws": 0,
-   "games": 1,
+   "games": 2,
    "rank": null,
    "order": null,
-   "gf": 13,
-   "ga": 14,
-   "goal_diff": "-1"
+   "gf": 20,
+   "ga": 49,
+   "goal_diff": "-29"
   },
   {
    "team": "日本体育大学",

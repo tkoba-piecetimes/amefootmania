@@ -77,32 +77,18 @@
    "slug": "kokushikan",
    "points": 3,
    "wins": 1,
-   "losses": 0,
-   "draws": 0,
-   "games": 1,
-   "rank": null,
-   "order": null,
-   "gf": 9,
-   "ga": 6,
-   "goal_diff": "+3"
-  },
-  {
-   "team": "東海大学",
-   "slug": "tokai",
-   "points": 0,
-   "wins": 0,
    "losses": 1,
    "draws": 0,
-   "games": 1,
+   "games": 2,
    "rank": null,
    "order": null,
-   "gf": 6,
-   "ga": 9,
-   "goal_diff": "-3"
+   "gf": 15,
+   "ga": 23,
+   "goal_diff": "-8"
   },
   {
-   "team": "日本大学",
-   "slug": "nihon",
+   "team": "明治学院大学",
+   "slug": "meijigakuin",
    "points": 3,
    "wins": 1,
    "losses": 0,
@@ -110,9 +96,37 @@
    "games": 1,
    "rank": null,
    "order": null,
-   "gf": 24,
-   "ga": 0,
-   "goal_diff": "+24"
+   "gf": 17,
+   "ga": 6,
+   "goal_diff": "+11"
+  },
+  {
+   "team": "東海大学",
+   "slug": "tokai",
+   "points": 0,
+   "wins": 0,
+   "losses": 2,
+   "draws": 0,
+   "games": 2,
+   "rank": null,
+   "order": null,
+   "gf": 9,
+   "ga": 62,
+   "goal_diff": "-53"
+  },
+  {
+   "team": "日本大学",
+   "slug": "nihon",
+   "points": 6,
+   "wins": 2,
+   "losses": 0,
+   "draws": 0,
+   "games": 2,
+   "rank": null,
+   "order": null,
+   "gf": 77,
+   "ga": 3,
+   "goal_diff": "+74"
   }
  ]
 }

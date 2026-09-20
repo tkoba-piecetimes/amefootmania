@@ -17,6 +17,20 @@
   {
    "team": "駒澤大学",
    "slug": "komazawa",
+   "points": 3,
+   "wins": 1,
+   "losses": 1,
+   "draws": 0,
+   "games": 2,
+   "rank": null,
+   "order": null,
+   "gf": 39,
+   "ga": 34,
+   "goal_diff": "+5"
+  },
+  {
+   "team": "横浜国立大学",
+   "slug": "yokohama-kokuritsu",
    "points": 0,
    "wins": 0,
    "losses": 1,
@@ -24,37 +38,37 @@
    "games": 1,
    "rank": null,
    "order": null,
-   "gf": 12,
+   "gf": 7,
    "ga": 27,
-   "goal_diff": "-15"
+   "goal_diff": "-20"
   },
   {
    "team": "専修大学",
    "slug": "senshu",
-   "points": 3,
-   "wins": 1,
+   "points": 6,
+   "wins": 2,
    "losses": 0,
    "draws": 0,
-   "games": 1,
+   "games": 2,
    "rank": null,
    "order": null,
-   "gf": 27,
-   "ga": 12,
-   "goal_diff": "+15"
+   "gf": 48,
+   "ga": 19,
+   "goal_diff": "+29"
   },
   {
    "team": "一橋大学",
    "slug": "hitotsubashi",
    "points": 0,
    "wins": 0,
-   "losses": 1,
+   "losses": 2,
    "draws": 0,
-   "games": 1,
+   "games": 2,
    "rank": null,
    "order": null,
-   "gf": 18,
-   "ga": 25,
-   "goal_diff": "-7"
+   "gf": 25,
+   "ga": 46,
+   "goal_diff": "-21"
   }
  ],
  "BIG8　Bブロック": [

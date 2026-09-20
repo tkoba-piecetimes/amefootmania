@@ -17,6 +17,23 @@
   "note": ""
  },
  {
+  "id": "2026-09-20-komazawa-vs-yokohama-kokuritsu",
+  "date": "2026-09-20",
+  "time": "未定",
+  "category": "BIG8　Aブロック",
+  "home": "駒澤大学",
+  "away": "横浜国立大学",
+  "home_slug": "komazawa",
+  "away_slug": "yokohama-kokuritsu",
+  "venue": "",
+  "status": "played",
+  "home_score": 27,
+  "away_score": 7,
+  "winner": "home",
+  "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026092002.pdf",
+  "note": ""
+ },
+ {
   "id": "2026-08-30-komazawa-vs-senshu",
   "date": "2026-08-30",
   "time": "未定",
@@ -31,6 +48,23 @@
   "away_score": 27,
   "winner": "away",
   "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026083001.pdf",
+  "note": ""
+ },
+ {
+  "id": "2026-09-20-senshu-vs-hitotsubashi",
+  "date": "2026-09-20",
+  "time": "未定",
+  "category": "BIG8　Aブロック",
+  "home": "専修大学",
+  "away": "一橋大学",
+  "home_slug": "senshu",
+  "away_slug": "hitotsubashi",
+  "venue": "",
+  "status": "played",
+  "home_score": 21,
+  "away_score": 7,
+  "winner": "home",
+  "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026092001.pdf",
   "note": ""
  },
  {
@@ -99,40 +133,6 @@
   "away_score": 53,
   "winner": "away",
   "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026091901.pdf",
-  "note": ""
- },
- {
-  "id": "2026-09-20-senshu-vs-hitotsubashi",
-  "date": "2026-09-20",
-  "time": "未定",
-  "category": "BIG8　Aブロック",
-  "home": "専修大学",
-  "away": "一橋大学",
-  "home_slug": "senshu",
-  "away_slug": "hitotsubashi",
-  "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "winner": null,
-  "pdf_url": "",
-  "note": ""
- },
- {
-  "id": "2026-09-20-komazawa-vs-yokohama-kokuritsu",
-  "date": "2026-09-20",
-  "time": "未定",
-  "category": "BIG8　Aブロック",
-  "home": "駒澤大学",
-  "away": "横浜国立大学",
-  "home_slug": "komazawa",
-  "away_slug": "yokohama-kokuritsu",
-  "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "winner": null,
-  "pdf_url": "",
   "note": ""
  },
  {

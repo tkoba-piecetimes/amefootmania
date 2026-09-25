@@ -51,11 +51,11 @@
 | H1' | 関東学生アメフト 通算勝率 直近シーズン | `amefoot-tsuyoi-daigaku-guide.md`の後続ロングテール。`records/`・`standings/`にリンクし、同記事の年1回リライトに合わせて更新。H1の代替として追加。 |
 | H2 | 関東学生アメフトリーグ 順位表 | `top8/standings/`・`big8/standings/`への導線記事。週次更新のため記事本文は仕組み解説に留め、数字は一次データページ側に任せる。 |
 | H3 | 大学アメフト 日程 今週末 | `schedule/`への導線。開幕前・シーズン中に検索が伸びる季節キーワード。年1回リライト。 |
-| H4 | 甲子園ボウル 出場校 決め方 | 既存`koshien-bowl-guide`の関連ロングテール。TOP8代表決定の仕組みに特化し重複を避ける。`records/`連携。 |
+| H4 | 甲子園ボウル 出場校 決め方（**採用済み＝`koshien-bowl-shutsujoko-kimekata.md`**、2026-09-25制作） | 既存`koshien-bowl-guide`の関連ロングテール。TOP8代表決定の仕組み（KCFA順位順列決定方法の6基準／関東1〜3位で変わる準々決勝の相手／ラウンド別の同点処理）に特化し重複を避けた。`standings/`・`schedule/`・`records/`・`teams/`連携。SERPメモ=`docs/serp-notes/koshien-bowl-shutsujoko-kimekata.md`。**更新型＝年1回リライト対象**（新方式は3年間の予定で2026年度が3年目のため、4年目以降の方式発表時に要改稿） |
 | H5 | アメフト 大学日本一 決定戦 | 甲子園ボウルの全国区文脈だが、関東側の出場ルートに寄せて執筆。 |
 | H6 | アメフト ルール 反則 一覧 | 既存`american-football-watching-guide`（試合時間・ダウン制）とは別意図（反則の種類・処置に特化）。競合は一般解説が多く関東大学版の実例（`matches/`の試合レポート）と絡めれば差別化できる。 |
 | H7 | アメフト タイブレーク ルール | README記載の関東独自運用（同点でもタイブレークで決着）を一次情報として書ける唯一のサイトになれる。`matches/`の実例にリンク。 |
-| H8 | アメフト部 進路 就職先 業界 | 就活接続系。既存`amefoot-shukatsu-ryoritsu-guide.md`は「シーズンとの両立スケジュール」が主眼のため、本KWは「どんな業界・職種に進む人が多いか」という進路先の傾向に特化して重複を避ける。`cta: shukatsu`、`shukatsu.tunakare.jp`へ内部リンク。 |
+| H8 | アメフト部 進路 就職先 業界（**採用済み＝`amefoot-shinro-shushoku-gyokai.md`**、2026-09-11公開） | 就活接続系。既存`amefoot-shukatsu-ryoritsu-guide.md`は「シーズンとの両立スケジュール」が主眼のため、本KWは「どんな業界・職種に進む人が多いか」という進路先の傾向に特化して重複を避けた。`cta: shukatsu`、`shukatsu.tunakare.jp/articles/taiikukai-muiteru-gyokai`へ内部リンク済み。SERPメモ=`docs/serp-notes/amefoot-shinro-shushoku-gyokai.md`。**以後この意図で新規記事化しない**（リライト対応） |
 | H9 | アメフト 強い高校 大学 推薦 | 高校生・保護者の進学検索。推薦制度は大学ごとに異なるため一次情報（各大学部公式）の確認必須。 |
 | H10 | アメフト 大学 セレクション 未経験 | 既存`amefoot-beginner-join-guide`（入部の実態）とは別意図（セレクションの有無・体験会）。 |
 | H11 | 大学アメフト テレビ 配信 見る方法 | 観戦導線。配信サービス・KCFA公式配信の有無を一次確認。年1回リライト。 |

@@ -36,11 +36,12 @@ SITE_BASE = "https://amefootmania.jp/"
 # 2026-08-27: カスタムドメイン切替に伴い解除。
 TEMP_NOINDEX = False
 
-# GA4測定ID: 2026-08-27時点で未発行のため空欄。発行後はここにIDを設定し、
-# page() 内のgtag挿入コードのコメントアウトを解除する。
+# GA4測定ID: 2026-08-27時点で未発行のため空欄。
+# GA4プロパティ発行後にIDを入れるだけで有効化される
 GA_MEASUREMENT_ID = ""
-# Search Console所有権確認トークン: 未登録のため空欄。
-GSC_VERIFICATION = ""
+# Search Console所有権確認トークン: 2026-09-25にURLプレフィックス検証用に設定
+# （アカウント共通トークン。rugbymania/pipeline/generate_site.py と同一）
+GSC_VERIFICATION = "0X77J6-cDQak8VJkyt1PGegqMjZwEI2HWAYjkwl3OF0"
 
 SITE_NAME = "アメフトマニア"
 
@@ -337,12 +338,11 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
         og_image = (f'<meta property="og:image" content="{SITE_BASE}assets/ogp.png">\n'
                     '<meta name="twitter:card" content="summary_large_image">\n')
     gsc = f'<meta name="google-site-verification" content="{GSC_VERIFICATION}">\n' if GSC_VERIFICATION else ""
-    # GA4測定ID発行後、以下のコメントを解除する。
     ga = ""
-    # if GA_MEASUREMENT_ID:
-    #     ga = (f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>'
-    #           '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
-    #           f"gtag('js',new Date());gtag('config','{GA_MEASUREMENT_ID}');</script>")
+    if GA_MEASUREMENT_ID:
+        ga = (f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>'
+              '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
+              f"gtag('js',new Date());gtag('config','{GA_MEASUREMENT_ID}');</script>")
     nav = "".join(f'<a href="{rel}{href}">{label}</a>' for href, label in NAV_ITEMS)
     body_class = ' class="has-sticky-cta"' if sticky else ""
     if "sources" in meta:

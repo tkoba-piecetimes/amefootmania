@@ -1,5 +1,22 @@
 [
  {
+  "id": "2026-09-26-waseda-vs-chuo",
+  "date": "2026-09-26",
+  "time": "未定",
+  "category": "TOP8",
+  "home": "早稲田大学",
+  "away": "中央大学",
+  "home_slug": "waseda",
+  "away_slug": "chuo",
+  "venue": "",
+  "status": "played",
+  "home_score": 38,
+  "away_score": 27,
+  "winner": "home",
+  "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026092601.pdf",
+  "note": ""
+ },
+ {
   "id": "2026-09-13-waseda-vs-keio",
   "date": "2026-09-13",
   "time": "未定",
@@ -136,23 +153,6 @@
   "note": ""
  },
  {
-  "id": "2026-09-26-waseda-vs-chuo",
-  "date": "2026-09-26",
-  "time": "未定",
-  "category": "TOP8",
-  "home": "早稲田大学",
-  "away": "中央大学",
-  "home_slug": "waseda",
-  "away_slug": "chuo",
-  "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "winner": null,
-  "pdf_url": "",
-  "note": ""
- },
- {
   "id": "2026-09-26-tokyo-u-vs-keio",
   "date": "2026-09-26",
   "time": "未定",
@@ -161,12 +161,12 @@
   "away": "慶應義塾大学",
   "home_slug": "tokyo-u",
   "away_slug": "keio",
-  "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "winner": null,
-  "pdf_url": "",
+  "venue": "",
+  "status": "played",
+  "home_score": 3,
+  "away_score": 27,
+  "winner": "away",
+  "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026092602.pdf",
   "note": ""
  },
  {

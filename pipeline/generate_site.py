@@ -38,7 +38,7 @@ TEMP_NOINDEX = False
 
 # GA4測定ID: 2026-08-27時点で未発行のため空欄。
 # GA4プロパティ発行後にIDを入れるだけで有効化される
-GA_MEASUREMENT_ID = ""
+GA_MEASUREMENT_ID = "G-HDSD8JLM5D"
 # Search Console所有権確認トークン: 2026-09-25にURLプレフィックス検証用に設定
 # （アカウント共通トークン。rugbymania/pipeline/generate_site.py と同一）
 GSC_VERIFICATION = "0X77J6-cDQak8VJkyt1PGegqMjZwEI2HWAYjkwl3OF0"

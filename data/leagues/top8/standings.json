@@ -19,28 +19,28 @@
    "slug": "meiji",
    "points": 6,
    "wins": 2,
-   "losses": 0,
+   "losses": 1,
    "draws": 0,
-   "games": 2,
+   "games": 3,
    "rank": null,
    "order": null,
-   "gf": 38,
-   "ga": 33,
-   "goal_diff": "+5"
+   "gf": 45,
+   "ga": 53,
+   "goal_diff": "-8"
   },
   {
    "team": "法政大学",
    "slug": "hosei",
-   "points": 6,
-   "wins": 2,
+   "points": 9,
+   "wins": 3,
    "losses": 0,
    "draws": 0,
-   "games": 2,
+   "games": 3,
    "rank": null,
    "order": null,
-   "gf": 59,
-   "ga": 29,
-   "goal_diff": "+30"
+   "gf": 90,
+   "ga": 46,
+   "goal_diff": "+44"
   },
   {
    "team": "東京大学",
@@ -59,16 +59,16 @@
   {
    "team": "立教大学",
    "slug": "rikkyo",
-   "points": 3,
-   "wins": 1,
+   "points": 6,
+   "wins": 2,
    "losses": 1,
    "draws": 0,
-   "games": 2,
+   "games": 3,
    "rank": null,
    "order": null,
-   "gf": 49,
-   "ga": 41,
-   "goal_diff": "+8"
+   "gf": 69,
+   "ga": 48,
+   "goal_diff": "+21"
   },
   {
    "team": "中央大学",
@@ -103,14 +103,14 @@
    "slug": "nittaidai",
    "points": 0,
    "wins": 0,
-   "losses": 2,
+   "losses": 3,
    "draws": 0,
-   "games": 2,
+   "games": 3,
    "rank": null,
    "order": null,
-   "gf": 40,
-   "ga": 52,
-   "goal_diff": "-12"
+   "gf": 57,
+   "ga": 83,
+   "goal_diff": "-26"
   }
  ]
 }

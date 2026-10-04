@@ -75,16 +75,16 @@
   {
    "team": "桜美林大学",
    "slug": "obirin",
-   "points": 0,
-   "wins": 0,
+   "points": 3,
+   "wins": 1,
    "losses": 1,
    "draws": 0,
-   "games": 1,
+   "games": 2,
    "rank": null,
    "order": null,
-   "gf": 0,
-   "ga": 24,
-   "goal_diff": "-24"
+   "gf": 38,
+   "ga": 45,
+   "goal_diff": "-7"
   },
   {
    "team": "国士舘大学",
@@ -105,42 +105,42 @@
    "slug": "meijigakuin",
    "points": 3,
    "wins": 1,
-   "losses": 0,
+   "losses": 1,
    "draws": 0,
-   "games": 1,
+   "games": 2,
    "rank": null,
    "order": null,
-   "gf": 17,
-   "ga": 6,
-   "goal_diff": "+11"
+   "gf": 27,
+   "ga": 44,
+   "goal_diff": "-17"
   },
   {
    "team": "東海大学",
    "slug": "tokai",
    "points": 0,
    "wins": 0,
-   "losses": 2,
+   "losses": 3,
    "draws": 0,
-   "games": 2,
+   "games": 3,
    "rank": null,
    "order": null,
-   "gf": 9,
-   "ga": 62,
-   "goal_diff": "-53"
+   "gf": 30,
+   "ga": 100,
+   "goal_diff": "-70"
   },
   {
    "team": "日本大学",
    "slug": "nihon",
-   "points": 6,
-   "wins": 2,
+   "points": 9,
+   "wins": 3,
    "losses": 0,
    "draws": 0,
-   "games": 2,
+   "games": 3,
    "rank": null,
    "order": null,
-   "gf": 77,
-   "ga": 3,
-   "goal_diff": "+74"
+   "gf": 115,
+   "ga": 13,
+   "goal_diff": "+102"
   }
  ]
 }

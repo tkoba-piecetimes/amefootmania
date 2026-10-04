@@ -1,5 +1,22 @@
 [
  {
+  "id": "2026-10-04-waseda-vs-rikkyo",
+  "date": "2026-10-04",
+  "time": "未定",
+  "category": "TOP8",
+  "home": "早稲田大学",
+  "away": "立教大学",
+  "home_slug": "waseda",
+  "away_slug": "rikkyo",
+  "venue": "",
+  "status": "played",
+  "home_score": 3,
+  "away_score": 27,
+  "winner": "away",
+  "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026100401.pdf",
+  "note": ""
+ },
+ {
   "id": "2026-09-26-waseda-vs-chuo",
   "date": "2026-09-26",
   "time": "未定",
@@ -238,23 +255,6 @@
   "note": ""
  },
  {
-  "id": "2026-10-04-waseda-vs-rikkyo",
-  "date": "2026-10-04",
-  "time": "未定",
-  "category": "TOP8",
-  "home": "早稲田大学",
-  "away": "立教大学",
-  "home_slug": "waseda",
-  "away_slug": "rikkyo",
-  "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "winner": null,
-  "pdf_url": "",
-  "note": ""
- },
- {
   "id": "2026-10-04-tokyo-u-vs-nittaidai",
   "date": "2026-10-04",
   "time": "未定",
@@ -263,12 +263,12 @@
   "away": "日本体育大学",
   "home_slug": "tokyo-u",
   "away_slug": "nittaidai",
-  "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "winner": null,
-  "pdf_url": "",
+  "venue": "",
+  "status": "played",
+  "home_score": 35,
+  "away_score": 14,
+  "winner": "home",
+  "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026100402.pdf",
   "note": ""
  },
  {

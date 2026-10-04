@@ -102,6 +102,23 @@
   "note": ""
  },
  {
+  "id": "2026-10-04-obirin-vs-tokai",
+  "date": "2026-10-04",
+  "time": "未定",
+  "category": "BIG8　Bブロック",
+  "home": "桜美林大学",
+  "away": "東海大学",
+  "home_slug": "obirin",
+  "away_slug": "tokai",
+  "venue": "",
+  "status": "played",
+  "home_score": 38,
+  "away_score": 21,
+  "winner": "home",
+  "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026100403.pdf",
+  "note": ""
+ },
+ {
   "id": "2026-09-06-obirin-vs-nihon",
   "date": "2026-09-06",
   "time": "未定",
@@ -153,6 +170,23 @@
   "note": ""
  },
  {
+  "id": "2026-10-04-meijigakuin-vs-nihon",
+  "date": "2026-10-04",
+  "time": "未定",
+  "category": "BIG8　Bブロック",
+  "home": "明治学院大学",
+  "away": "日本大学",
+  "home_slug": "meijigakuin",
+  "away_slug": "nihon",
+  "venue": "",
+  "status": "played",
+  "home_score": 10,
+  "away_score": 38,
+  "winner": "away",
+  "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026100404.pdf",
+  "note": ""
+ },
+ {
   "id": "2026-09-19-tokai-vs-nihon",
   "date": "2026-09-19",
   "time": "未定",
@@ -167,40 +201,6 @@
   "away_score": 53,
   "winner": "away",
   "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026091901.pdf",
-  "note": ""
- },
- {
-  "id": "2026-10-04-meijigakuin-vs-nihon",
-  "date": "2026-10-04",
-  "time": "未定",
-  "category": "BIG8　Bブロック",
-  "home": "明治学院大学",
-  "away": "日本大学",
-  "home_slug": "meijigakuin",
-  "away_slug": "nihon",
-  "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "winner": null,
-  "pdf_url": "",
-  "note": ""
- },
- {
-  "id": "2026-10-04-obirin-vs-tokai",
-  "date": "2026-10-04",
-  "time": "未定",
-  "category": "BIG8　Bブロック",
-  "home": "桜美林大学",
-  "away": "東海大学",
-  "home_slug": "obirin",
-  "away_slug": "tokai",
-  "venue": "桜美林大学桜グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "winner": null,
-  "pdf_url": "",
   "note": ""
  },
  {

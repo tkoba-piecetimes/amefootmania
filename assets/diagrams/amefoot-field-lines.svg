@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 462" width="640" height="462" role="img" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic','Meiryo',sans-serif">
+<title>アメフトのフィールド。両ゴールライン間は100ヤード、その外側に10ヤードずつのエンドゾーン。ヤードラインは5ヤードごと、ハッシュマークはサイドラインから60フィートの位置に2列</title>
+<rect width="640" height="462" fill="#ffffff"/>
+<rect x="30" y="80" width="580" height="258" fill="#e8f3e8" stroke="#1f2a44" stroke-width="3"/>
+<rect x="30" y="80" width="48.3333" height="258" fill="#cfe3cf"/>
+<rect x="561.667" y="80" width="48.3333" height="258" fill="#cfe3cf"/>
+<rect x="30" y="80" width="580" height="258" fill="none" stroke="#1f2a44" stroke-width="3"/>
+<line x1="102.5" y1="80" x2="102.5" y2="338" stroke="#9aa3b2" stroke-width="1.5"/>
+<line x1="126.667" y1="80" x2="126.667" y2="338" stroke="#1f2a44" stroke-width="2"/>
+<line x1="150.833" y1="80" x2="150.833" y2="338" stroke="#9aa3b2" stroke-width="1.5"/>
+<line x1="175" y1="80" x2="175" y2="338" stroke="#1f2a44" stroke-width="2"/>
+<line x1="199.167" y1="80" x2="199.167" y2="338" stroke="#9aa3b2" stroke-width="1.5"/>
+<line x1="223.333" y1="80" x2="223.333" y2="338" stroke="#1f2a44" stroke-width="2"/>
+<line x1="247.5" y1="80" x2="247.5" y2="338" stroke="#9aa3b2" stroke-width="1.5"/>
+<line x1="271.667" y1="80" x2="271.667" y2="338" stroke="#1f2a44" stroke-width="2"/>
+<line x1="295.833" y1="80" x2="295.833" y2="338" stroke="#9aa3b2" stroke-width="1.5"/>
+<line x1="320" y1="80" x2="320" y2="338" stroke="#1f2a44" stroke-width="2"/>
+<line x1="344.167" y1="80" x2="344.167" y2="338" stroke="#9aa3b2" stroke-width="1.5"/>
+<line x1="368.333" y1="80" x2="368.333" y2="338" stroke="#1f2a44" stroke-width="2"/>
+<line x1="392.5" y1="80" x2="392.5" y2="338" stroke="#9aa3b2" stroke-width="1.5"/>
+<line x1="416.667" y1="80" x2="416.667" y2="338" stroke="#1f2a44" stroke-width="2"/>
+<line x1="440.833" y1="80" x2="440.833" y2="338" stroke="#9aa3b2" stroke-width="1.5"/>
+<line x1="465" y1="80" x2="465" y2="338" stroke="#1f2a44" stroke-width="2"/>
+<line x1="489.167" y1="80" x2="489.167" y2="338" stroke="#9aa3b2" stroke-width="1.5"/>
+<line x1="513.333" y1="80" x2="513.333" y2="338" stroke="#1f2a44" stroke-width="2"/>
+<line x1="537.5" y1="80" x2="537.5" y2="338" stroke="#9aa3b2" stroke-width="1.5"/>
+<line x1="78.3333" y1="80" x2="78.3333" y2="338" stroke="#1f2a44" stroke-width="4"/>
+<line x1="561.667" y1="80" x2="561.667" y2="338" stroke="#1f2a44" stroke-width="4"/>
+<path d="M83.2,172.8v8M83.2,237.2v8M88.0,172.8v8M88.0,237.2v8M92.8,172.8v8M92.8,237.2v8M97.7,172.8v8M97.7,237.2v8M102.5,172.8v8M102.5,237.2v8M107.3,172.8v8M107.3,237.2v8M112.2,172.8v8M112.2,237.2v8M117.0,172.8v8M117.0,237.2v8M121.8,172.8v8M121.8,237.2v8M126.7,172.8v8M126.7,237.2v8M131.5,172.8v8M131.5,237.2v8M136.3,172.8v8M136.3,237.2v8M141.2,172.8v8M141.2,237.2v8M146.0,172.8v8M146.0,237.2v8M150.8,172.8v8M150.8,237.2v8M155.7,172.8v8M155.7,237.2v8M160.5,172.8v8M160.5,237.2v8M165.3,172.8v8M165.3,237.2v8M170.2,172.8v8M170.2,237.2v8M175.0,172.8v8M175.0,237.2v8M179.8,172.8v8M179.8,237.2v8M184.7,172.8v8M184.7,237.2v8M189.5,172.8v8M189.5,237.2v8M194.3,172.8v8M194.3,237.2v8M199.2,172.8v8M199.2,237.2v8M204.0,172.8v8M204.0,237.2v8M208.8,172.8v8M208.8,237.2v8M213.7,172.8v8M213.7,237.2v8M218.5,172.8v8M218.5,237.2v8M223.3,172.8v8M223.3,237.2v8M228.2,172.8v8M228.2,237.2v8M233.0,172.8v8M233.0,237.2v8M237.8,172.8v8M237.8,237.2v8M242.7,172.8v8M242.7,237.2v8M247.5,172.8v8M247.5,237.2v8M252.3,172.8v8M252.3,237.2v8M257.2,172.8v8M257.2,237.2v8M262.0,172.8v8M262.0,237.2v8M266.8,172.8v8M266.8,237.2v8M271.7,172.8v8M271.7,237.2v8M276.5,172.8v8M276.5,237.2v8M281.3,172.8v8M281.3,237.2v8M286.2,172.8v8M286.2,237.2v8M291.0,172.8v8M291.0,237.2v8M295.8,172.8v8M295.8,237.2v8M300.7,172.8v8M300.7,237.2v8M305.5,172.8v8M305.5,237.2v8M310.3,172.8v8M310.3,237.2v8M315.2,172.8v8M315.2,237.2v8M320.0,172.8v8M320.0,237.2v8M324.8,172.8v8M324.8,237.2v8M329.7,172.8v8M329.7,237.2v8M334.5,172.8v8M334.5,237.2v8M339.3,172.8v8M339.3,237.2v8M344.2,172.8v8M344.2,237.2v8M349.0,172.8v8M349.0,237.2v8M353.8,172.8v8M353.8,237.2v8M358.7,172.8v8M358.7,237.2v8M363.5,172.8v8M363.5,237.2v8M368.3,172.8v8M368.3,237.2v8M373.2,172.8v8M373.2,237.2v8M378.0,172.8v8M378.0,237.2v8M382.8,172.8v8M382.8,237.2v8M387.7,172.8v8M387.7,237.2v8M392.5,172.8v8M392.5,237.2v8M397.3,172.8v8M397.3,237.2v8M402.2,172.8v8M402.2,237.2v8M407.0,172.8v8M407.0,237.2v8M411.8,172.8v8M411.8,237.2v8M416.7,172.8v8M416.7,237.2v8M421.5,172.8v8M421.5,237.2v8M426.3,172.8v8M426.3,237.2v8M431.2,172.8v8M431.2,237.2v8M436.0,172.8v8M436.0,237.2v8M440.8,172.8v8M440.8,237.2v8M445.7,172.8v8M445.7,237.2v8M450.5,172.8v8M450.5,237.2v8M455.3,172.8v8M455.3,237.2v8M460.2,172.8v8M460.2,237.2v8M465.0,172.8v8M465.0,237.2v8M469.8,172.8v8M469.8,237.2v8M474.7,172.8v8M474.7,237.2v8M479.5,172.8v8M479.5,237.2v8M484.3,172.8v8M484.3,237.2v8M489.2,172.8v8M489.2,237.2v8M494.0,172.8v8M494.0,237.2v8M498.8,172.8v8M498.8,237.2v8M503.7,172.8v8M503.7,237.2v8M508.5,172.8v8M508.5,237.2v8M513.3,172.8v8M513.3,237.2v8M518.2,172.8v8M518.2,237.2v8M523.0,172.8v8M523.0,237.2v8M527.8,172.8v8M527.8,237.2v8M532.7,172.8v8M532.7,237.2v8M537.5,172.8v8M537.5,237.2v8M542.3,172.8v8M542.3,237.2v8M547.2,172.8v8M547.2,237.2v8M552.0,172.8v8M552.0,237.2v8M556.8,172.8v8M556.8,237.2v8" fill="none" stroke="#1f2a44" stroke-width="1"/>
+<text x="126.667" y="118" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">10</text>
+<text x="126.667" y="314" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">10</text>
+<text x="175" y="118" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">20</text>
+<text x="175" y="314" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">20</text>
+<text x="223.333" y="118" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">30</text>
+<text x="223.333" y="314" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">30</text>
+<text x="271.667" y="118" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">40</text>
+<text x="271.667" y="314" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">40</text>
+<text x="320" y="118" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">50</text>
+<text x="320" y="314" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">50</text>
+<text x="368.333" y="118" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">40</text>
+<text x="368.333" y="314" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">40</text>
+<text x="416.667" y="118" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">30</text>
+<text x="416.667" y="314" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">30</text>
+<text x="465" y="118" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">20</text>
+<text x="465" y="314" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">20</text>
+<text x="513.333" y="118" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">10</text>
+<text x="513.333" y="314" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">10</text>
+<text x="54.1667" y="205" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">エンド</text>
+<text x="54.1667" y="223" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">ゾーン</text>
+<text x="585.833" y="205" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">エンド</text>
+<text x="585.833" y="223" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">ゾーン</text>
+<text x="320" y="215" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="bold" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">ハッシュマーク</text>
+<line x1="290" y1="203" x2="290" y2="184.75" stroke="#1f2a44" stroke-width="1.5"/>
+<polygon points="290.0,184.8 294.5,193.8 285.5,193.8" fill="#1f2a44"/>
+<line x1="290" y1="227" x2="290" y2="233.25" stroke="#1f2a44" stroke-width="1.5"/>
+<polygon points="290.0,233.2 285.5,224.2 294.5,224.2" fill="#1f2a44"/>
+<line x1="80.3333" y1="60" x2="559.667" y2="60" stroke="#1f2a44" stroke-width="2"/>
+<polygon points="559.7,60.0 550.7,64.5 550.7,55.5" fill="#1f2a44"/>
+<line x1="559.667" y1="60" x2="80.3333" y2="60" stroke="#1f2a44" stroke-width="2"/>
+<polygon points="80.3,60.0 89.3,55.5 89.3,64.5" fill="#1f2a44"/>
+<text x="320" y="50" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="bold">ゴールライン間 100ヤード</text>
+<text x="54.1667" y="50" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">10ヤード</text>
+<text x="585.833" y="50" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">10ヤード</text>
+<line x1="78.3333" y1="340" x2="78.3333" y2="358" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="78.3333" y="378" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="bold">ゴールライン</text>
+<line x1="199.167" y1="337" x2="199.167" y2="358" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="259.167" y="378" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="bold">ヤードライン（5ヤードごと）</text>
+<line x1="440.833" y1="340" x2="440.833" y2="358" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="440.833" y="378" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="bold">サイドライン</text>
+<line x1="610" y1="340" x2="610" y2="384" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="620" y="404" font-size="16" text-anchor="end" fill="#1f2a44" font-weight="bold">エンドライン</text>
+<text x="320" y="434" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="normal">フィールドの幅は160フィート（約48.8m）</text>
+<text x="320" y="454" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="normal">ハッシュマークはサイドラインから60フィート（約18.3m）内側</text>
+</svg>

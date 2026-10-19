@@ -1,0 +1,590 @@
+{
+  "terms": [
+    {
+      "id": "down",
+      "term": "ダウン",
+      "aliases": [],
+      "short": "攻撃1回分のこと。ボールが動き出してから止まるまでが1回で、攻撃側は4回まで続けて行える。",
+      "diagram": "amefoot-four-downs",
+      "category": "ルールの基本",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "first-down",
+      "term": "ファーストダウン",
+      "aliases": [
+        "第1ダウン",
+        "第１ダウン",
+        "1stダウン"
+      ],
+      "short": "新しい4回の攻撃の1回目。10ヤード以上進むと、また最初から4回の攻撃が与えられる。",
+      "diagram": "amefoot-four-downs",
+      "category": "ルールの基本",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "series",
+      "term": "シリーズ",
+      "aliases": [],
+      "short": "攻撃側に与えられる、最大4回までの攻撃のひとまとまり。10ヤード進むと新しく始まる。",
+      "diagram": "amefoot-four-downs",
+      "category": "ルールの基本",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "line-to-gain",
+      "term": "シリーズ獲得線",
+      "aliases": [],
+      "short": "攻撃の開始地点から10ヤード先にある目印の線。ここに届けば、新しい4回の攻撃が得られる。",
+      "diagram": "amefoot-four-downs",
+      "category": "ルールの基本",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "yard",
+      "term": "ヤード",
+      "aliases": [],
+      "short": "距離の単位で、1ヤードは約0.9メートル。フィールドには5ヤードごとに線が引かれている。",
+      "diagram": "amefoot-field-lines",
+      "category": "フィールド",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "yard-line",
+      "term": "ヤードライン",
+      "aliases": [
+        "ヤード ライン"
+      ],
+      "short": "フィールドを横切る、ゴールラインと平行な線。5ヤードごとに引かれ、真ん中が50ヤードライン。",
+      "diagram": "amefoot-field-lines",
+      "category": "フィールド",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "goal-line",
+      "term": "ゴールライン",
+      "aliases": [
+        "ゴール ライン"
+      ],
+      "short": "フィールドの両端にある、エンドゾーンとの境目の線。ボールを持ってここを越えると得点になる。",
+      "diagram": "amefoot-field-lines",
+      "category": "フィールド",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "end-zone",
+      "term": "エンドゾーン",
+      "aliases": [
+        "エンド ゾーン"
+      ],
+      "short": "両ゴールラインの外側にある、奥行き10ヤードの得点エリア。ここにボールを持ち込むと得点になる。",
+      "diagram": "amefoot-field-lines",
+      "category": "フィールド",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "sideline",
+      "term": "サイドライン",
+      "aliases": [
+        "サイド ライン"
+      ],
+      "short": "フィールドの長い辺にある境界線。ボールを持った選手がここに触れるか出ると、その場でプレーが止まる。",
+      "diagram": "amefoot-field-lines",
+      "category": "フィールド",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "hash-mark",
+      "term": "ハッシュマーク",
+      "aliases": [
+        "ハッシュ マーク"
+      ],
+      "short": "フィールドの中央寄りに2列並ぶ短い線。プレーは必ずこの線の上か、線の間から始める。",
+      "diagram": "amefoot-field-lines",
+      "category": "フィールド",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "out-of-bounds",
+      "term": "アウトオブバウンズ",
+      "aliases": [
+        "アウト オブ バウンズ"
+      ],
+      "short": "フィールドの境界線の外側と、境界線そのもの。ボールを持った選手が出ると、その場でプレーが止まる。",
+      "diagram": "amefoot-field-lines",
+      "category": "フィールド",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "scrimmage-line",
+      "term": "スクリメージライン",
+      "aliases": [
+        "スクリメージ ライン"
+      ],
+      "short": "プレー開始時にボールの先端を通る、サイドラインに直角の線。攻守が向かい合う境目になる。",
+      "diagram": "amefoot-scrimmage-neutral-zone",
+      "category": "プレーの始まり",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "neutral-zone",
+      "term": "ニュートラルゾーン",
+      "aliases": [
+        "ニュートラル ゾーン"
+      ],
+      "short": "攻守それぞれの線にはさまれた、ボールの長さぶんの空間。プレー開始の瞬間、守備側は入れない。",
+      "diagram": "amefoot-scrimmage-neutral-zone",
+      "category": "プレーの始まり",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "snap",
+      "term": "スナップ",
+      "aliases": [],
+      "short": "プレー開始の動作。地面に置いたボールを、攻撃側の選手が後ろへ渡す。",
+      "diagram": "amefoot-scrimmage-neutral-zone",
+      "category": "プレーの始まり",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "penalty",
+      "term": "反則",
+      "aliases": [],
+      "short": "罰則が決まっているルール違反。審判が旗を投げて知らせ、陣地を下げられるなどの罰がある。",
+      "category": "反則",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "penalty-yards",
+      "term": "罰退",
+      "aliases": [
+        "罰退ヤード"
+      ],
+      "short": "反則の罰として、そのチームの陣地が後ろへ下げられること。5・10・15ヤードなど反則ごとに決まっている。",
+      "category": "反則",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "offside",
+      "term": "オフサイド",
+      "aliases": [],
+      "short": "守備側の選手が、プレー開始の瞬間に、ボールの位置の線を越えて入っている反則。",
+      "diagram": "amefoot-scrimmage-neutral-zone",
+      "category": "反則",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "targeting",
+      "term": "ターゲティング",
+      "aliases": [],
+      "short": "ヘルメットの頭頂部や、無防備な相手の首・頭を狙って強く当たる、危険な反則。",
+      "category": "反則",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "touchdown",
+      "term": "タッチダウン",
+      "aliases": [
+        "タッチ ダウン"
+      ],
+      "short": "ボールを持って相手のエンドゾーンに入る、またはその中でパスをキャッチして得る6点の得点。",
+      "diagram": "amefoot-scoring",
+      "category": "得点",
+      "source": "https://americanfootball.jp/beginner/"
+    },
+    {
+      "id": "field-goal",
+      "term": "フィールドゴール",
+      "aliases": [
+        "フィールド ゴール"
+      ],
+      "short": "ゴールポストの間にボールを蹴り込んで得る、3点の得点。キックが成功したときだけ入る。",
+      "diagram": "amefoot-scoring",
+      "category": "得点",
+      "source": "https://americanfootball.jp/beginner/"
+    },
+    {
+      "id": "try",
+      "term": "トライ",
+      "aliases": [
+        "トライフォーポイント"
+      ],
+      "short": "タッチダウンのあとに行う追加のプレー。キックが成功すれば1点、走るか投げるかして成功すれば2点。",
+      "diagram": "amefoot-scoring",
+      "category": "得点",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "safety",
+      "term": "セーフティ",
+      "aliases": [
+        "セイフティ"
+      ],
+      "short": "守備の最後方に立つ選手。また、攻撃側が自陣エンドゾーンで止められて相手に入る2点の得点もこう呼ぶ。",
+      "diagram": "amefoot-scoring",
+      "category": "得点",
+      "source": "https://americanfootball.jp/beginner/"
+    },
+    {
+      "id": "touchback",
+      "term": "タッチバック",
+      "aliases": [],
+      "short": "攻撃側の責任でボールが相手のエンドゾーンを越えて止まること。守備側の20ヤード（キック後は25ヤード）から再開。",
+      "diagram": "amefoot-kickoff-lines",
+      "category": "キック",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "kickoff",
+      "term": "キックオフ",
+      "aliases": [
+        "キック オフ"
+      ],
+      "short": "試合開始やタッチダウンの後などに、ボールを蹴って始めるプレー。蹴る側は自陣35ヤードから蹴る。",
+      "diagram": "amefoot-kickoff-lines",
+      "category": "キック",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "punt",
+      "term": "パント",
+      "aliases": [],
+      "short": "ボールを手から落とし、地面に着く前に蹴るキック。攻撃が進まないとき、陣地を押し返すために使う。",
+      "category": "キック",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "fair-catch",
+      "term": "フェアキャッチ",
+      "aliases": [
+        "フェア キャッチ"
+      ],
+      "short": "蹴られたボールを受ける選手が合図を出してキャッチすること。その場で止まり、相手から当たられない。",
+      "category": "キック",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "special-team",
+      "term": "スペシャルチーム",
+      "aliases": [],
+      "short": "キックオフ・パント・フィールドゴールなど、ボールを蹴る場面で出場するチーム。",
+      "category": "キック",
+      "source": "https://spaia.jp/column/american_football/1883"
+    },
+    {
+      "id": "fumble",
+      "term": "ファンブル",
+      "aliases": [],
+      "short": "ボールを持つ選手が、落としたりはじかれたりして、ボールを持ち続けられなくなること。",
+      "category": "ボールの動き",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "interception",
+      "term": "インターセプト",
+      "aliases": [],
+      "short": "相手の投げたパスを空中で奪い取ること。奪った側が攻撃権を得る。",
+      "category": "ボールの動き",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "offense",
+      "term": "オフェンス",
+      "aliases": [],
+      "short": "ボールを確保していて、相手のゴールを目指して攻めている側のチーム。",
+      "category": "ポジション",
+      "source": "https://americanfootball.jp/beginner/"
+    },
+    {
+      "id": "defense",
+      "term": "ディフェンス",
+      "aliases": [],
+      "short": "ボールを持たず、相手の攻撃を止める側のチーム。相手に進ませず、ボールを奪うことも目指す。",
+      "category": "ポジション",
+      "source": "https://americanfootball.jp/beginner/"
+    },
+    {
+      "id": "qb",
+      "term": "QB",
+      "aliases": [
+        "クォーターバック"
+      ],
+      "short": "攻撃の司令塔。作戦に合わせて、パスを投げたり、走る選手にボールを渡したりする。",
+      "diagram": "amefoot-offense-positions",
+      "category": "ポジション",
+      "source": "https://second-effort.com/positions/offense/"
+    },
+    {
+      "id": "rb",
+      "term": "RB",
+      "aliases": [
+        "ランニングバック"
+      ],
+      "short": "QBからボールを受け取って走り、陣地を進める選手。足の速さと当たり負けしない強さが求められる。",
+      "diagram": "amefoot-offense-positions",
+      "category": "ポジション",
+      "source": "https://second-effort.com/positions/offense/"
+    },
+    {
+      "id": "wr",
+      "term": "WR",
+      "aliases": [
+        "ワイドレシーバー"
+      ],
+      "short": "フィールドの外側に広がり、投げられたパスをキャッチして陣地を進める選手。",
+      "diagram": "amefoot-offense-positions",
+      "category": "ポジション",
+      "source": "https://second-effort.com/positions/offense/"
+    },
+    {
+      "id": "te",
+      "term": "TE",
+      "aliases": [
+        "タイトエンド"
+      ],
+      "short": "攻撃のライン（壁役の選手たち）の端に並び、壁役とパスキャッチの両方をこなす選手。",
+      "diagram": "amefoot-offense-positions",
+      "category": "ポジション",
+      "source": "https://second-effort.com/positions/offense/"
+    },
+    {
+      "id": "ol",
+      "term": "OL",
+      "aliases": [
+        "オフェンスライン"
+      ],
+      "short": "スクリメージライン上に並ぶ5人の壁役。パスを投げる選手を守り、走る選手の道を作る。",
+      "diagram": "amefoot-offense-positions",
+      "category": "ポジション",
+      "source": "https://second-effort.com/positions/offense/"
+    },
+    {
+      "id": "dl",
+      "term": "DL",
+      "aliases": [
+        "ディフェンスライン"
+      ],
+      "short": "守備の最前列に並ぶ選手たち。相手のラインに当たって走るプレーを止め、パスを投げる選手に迫る。",
+      "diagram": "amefoot-defense-positions",
+      "category": "ポジション",
+      "source": "https://spaia.jp/column/american_football/1883"
+    },
+    {
+      "id": "lb",
+      "term": "LB",
+      "aliases": [
+        "ラインバッカー"
+      ],
+      "short": "守備の最前列のすぐ後ろに立ち、走るプレーを止め、パスも守る選手。守備の要といわれる。",
+      "diagram": "amefoot-defense-positions",
+      "category": "ポジション",
+      "source": "https://spaia.jp/column/american_football/1883"
+    },
+    {
+      "id": "db",
+      "term": "DB",
+      "aliases": [
+        "ディフェンスバック",
+        "ディフェンシブバック"
+      ],
+      "short": "守備の後ろ側で、相手のパスを防ぐ選手の総称。後方と外側を守る。",
+      "diagram": "amefoot-defense-positions",
+      "category": "ポジション",
+      "source": "https://spaia.jp/column/american_football/1883"
+    },
+    {
+      "id": "cb",
+      "term": "CB",
+      "aliases": [
+        "コーナーバック"
+      ],
+      "short": "守備の外側に立ち、パスを受けにくる相手選手に付いて、パスを防ぐ選手。",
+      "diagram": "amefoot-defense-positions",
+      "category": "ポジション",
+      "source": "https://ja.wikipedia.org/wiki/コーナーバック"
+    },
+    {
+      "id": "tackle",
+      "term": "タックル",
+      "aliases": [],
+      "short": "ボールを持つ相手を、体を使って止めること。攻撃のラインの端に立つ選手の呼び名でもある。",
+      "category": "技術",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "pass-pro",
+      "term": "パスプロテクション",
+      "aliases": [
+        "パスプロ"
+      ],
+      "short": "パスを投げる選手が守備に襲われず投げられるよう、攻撃のラインが壁になって守ること。",
+      "category": "技術",
+      "source": "https://second-effort.com/term/pass-protection/"
+    },
+    {
+      "id": "pass-rush",
+      "term": "パスラッシュ",
+      "aliases": [],
+      "short": "守備の選手が、パスを投げる選手に向かって突っ込み、投げるのを邪魔すること。",
+      "category": "技術",
+      "source": "https://amefoot-club.com/football-classroom-defense-pass-rush/"
+    },
+    {
+      "id": "blitz",
+      "term": "ブリッツ",
+      "aliases": [],
+      "short": "ラインの後ろに立つ守備選手も一緒に突っ込み、パスを投げる選手に迫る守り方。",
+      "category": "技術",
+      "source": "https://amefoot-club.com/football-classroom-defense-4-3-defensvie-front/"
+    },
+    {
+      "id": "man-to-man",
+      "term": "マンツーマン",
+      "aliases": [],
+      "short": "守備選手が、あらかじめ決めた1人の相手選手に付きっきりで守る方法。",
+      "category": "技術",
+      "source": "https://www.nationalfootballpost.com/coaching-session-man-coverage"
+    },
+    {
+      "id": "gap",
+      "term": "ギャップ",
+      "aliases": [],
+      "short": "攻撃のライン（壁役の選手たち）の、選手と選手の間にできるすき間。守る側が受け持つ場所の目安になる。",
+      "category": "技術",
+      "source": "https://amefoot-club.com/football-classroom-defense-4-3-defensvie-front/"
+    },
+    {
+      "id": "cutback",
+      "term": "カットバック",
+      "aliases": [],
+      "short": "走る向きを急に反対側へ切り返して、守備の裏をかく動き。ボールを持って走る選手が使う。",
+      "category": "技術",
+      "source": "https://second-effort.com/positions/running-back/"
+    },
+    {
+      "id": "route-running",
+      "term": "ルートランニング",
+      "aliases": [
+        "ルート ランニング"
+      ],
+      "short": "パスを受ける選手が、決められた道筋を走って守備を振り切る技術。",
+      "category": "技術",
+      "source": "https://en.wikipedia.org/wiki/Route_%28American_football%29"
+    },
+    {
+      "id": "tiebreak",
+      "term": "タイブレーク",
+      "aliases": [
+        "タイブレイク",
+        "タイ ブレイク",
+        "超過節"
+      ],
+      "short": "同点で終わった試合に勝敗をつける延長戦。決まった地点から両チームが1回ずつ攻撃する。",
+      "diagram": "amefoot-tiebreak-start",
+      "category": "リーグと試合形式",
+      "source": "https://americanfootball.jp/wp-content/uploads/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%88%E5%85%AC%E5%BC%8F%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF2026-2027_%E8%BB%BD%E9%87%8F.pdf"
+    },
+    {
+      "id": "challenge-match",
+      "term": "チャレンジマッチ",
+      "aliases": [
+        "入れ替え戦"
+      ],
+      "short": "上位リーグの下位チームと、下位リーグの上位チームが戦う、リーグの入れ替えをかけた試合。",
+      "diagram": "amefoot-league-challenge",
+      "category": "リーグと試合形式",
+      "source": "https://www.kcfa.jp/rankingmethod/"
+    },
+    {
+      "id": "hoshitori",
+      "term": "星取表",
+      "aliases": [],
+      "short": "リーグ戦の全チームの勝敗を、対戦相手ごとに○と●で表にしたもの。",
+      "category": "リーグと試合形式",
+      "source": "https://www.kcfa.jp/result_team/"
+    },
+    {
+      "id": "win-points",
+      "term": "勝ち点",
+      "aliases": [],
+      "short": "リーグ戦の順位を決める点数。関東学生リーグでは、勝ち3点・引き分け1点・負け0点。",
+      "category": "リーグと試合形式",
+      "source": "https://www.kcfa.jp/rankingmethod/"
+    },
+    {
+      "id": "open-sen",
+      "term": "オープン戦",
+      "aliases": [
+        "春季オープン戦"
+      ],
+      "short": "リーグ戦の順位や入れ替えに関係しない、春に行われる試合。秋の本番に向けた調整の場。",
+      "category": "リーグと試合形式",
+      "source": "https://www.kcfa.jp/schedule_all_pre/"
+    },
+    {
+      "id": "concussion",
+      "term": "脳震盪",
+      "aliases": [
+        "脳振盪"
+      ],
+      "short": "頭や体への強い衝撃で、脳が頭の中で揺さぶられて起こる状態。頭痛や吐き気、意識の異常が出ることがある。",
+      "category": "安全とトレーニング",
+      "source": "https://americanfootball.jp/knowledge/safety/"
+    },
+    {
+      "id": "guardian-cap",
+      "term": "ガーディアンキャップ",
+      "aliases": [],
+      "short": "ヘルメットの外側にかぶせる、約200gのクッション状のキャップ。衝撃をやわらげる目的で使われる。",
+      "category": "安全とトレーニング",
+      "source": "https://americanfootball.jp/knowledge/safety/"
+    },
+    {
+      "id": "wbgt",
+      "term": "WBGT",
+      "aliases": [
+        "暑さ指数"
+      ],
+      "short": "気温・湿度・日ざしなどから求める、熱中症の危険度の目安。暑さ指数ともいう。",
+      "category": "安全とトレーニング",
+      "source": "https://www.wbgt.env.go.jp/wbgt.php"
+    },
+    {
+      "id": "acl",
+      "term": "ACL",
+      "aliases": [
+        "前十字靭帯",
+        "前十字靱帯"
+      ],
+      "short": "膝の中にある靭帯の一つ。すねの骨が前にずれるのを防ぎ、膝のねじれも抑えて安定させる。",
+      "category": "安全とトレーニング",
+      "source": "https://minds.jcqhc.or.jp/summary/c00503/"
+    },
+    {
+      "id": "40-yard-dash",
+      "term": "40ヤード走",
+      "aliases": [],
+      "short": "40ヤード（約36.6メートル）を全力で走り、タイムを測る種目。アメフトの代表的なスピード測定。",
+      "category": "安全とトレーニング",
+      "source": "https://second-effort.com/skill-training/yard-dash/"
+    },
+    {
+      "id": "agility",
+      "term": "アジリティ",
+      "aliases": [],
+      "short": "素早く加速や減速をして向きを変える能力。まっすぐ走る速さとは別の力。",
+      "category": "安全とトレーニング",
+      "source": "https://second-effort.com/skill-training/agility/"
+    },
+    {
+      "id": "analyzer",
+      "term": "アナライザー",
+      "aliases": [
+        "アナライジングスタッフ"
+      ],
+      "short": "試合や練習の映像・データを分析し、チームに相手の情報や戦い方を伝える裏方のスタッフ。",
+      "category": "チームの役割",
+      "source": "https://www.tokyowarriors.com/%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95%E7%B4%B9%E4%BB%8B/"
+    }
+  ]
+}

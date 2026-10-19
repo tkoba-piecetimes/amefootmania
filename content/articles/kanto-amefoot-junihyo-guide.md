@@ -4,6 +4,7 @@ description: 関東学生アメフト（KCFA）TOP8・BIG8の順位表の読み�
 category: 観戦ガイド
 date: 2026-09-14
 cta: sponsor
+level: 入門
 ---
 
 ## 関東学生アメフトの順位表はどこで見られるか

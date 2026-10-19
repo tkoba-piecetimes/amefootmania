@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic','Meiryo',sans-serif">
+<title>キックオフのライン。キックチームは自陣35ヤード、レシーブチームはその10ヤード前方（キックチームから見て45ヤード）に制限線があり、エンドゾーンに入ってそのままデッドになるとレシーブ側の25ヤードから攻撃が始まる（タッチバック）</title>
+<rect width="640" height="400" fill="#ffffff"/>
+<rect x="30" y="110" width="580" height="120" fill="#e8f3e8" stroke="#1f2a44" stroke-width="3"/>
+<rect x="30" y="110" width="48.3333" height="120" fill="#cfe3cf"/>
+<rect x="561.667" y="110" width="48.3333" height="120" fill="#cfe3cf"/>
+<rect x="30" y="110" width="580" height="120" fill="none" stroke="#1f2a44" stroke-width="3"/>
+<line x1="102.5" y1="110" x2="102.5" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="126.667" y1="110" x2="126.667" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="150.833" y1="110" x2="150.833" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="175" y1="110" x2="175" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="199.167" y1="110" x2="199.167" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="223.333" y1="110" x2="223.333" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="247.5" y1="110" x2="247.5" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="271.667" y1="110" x2="271.667" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="295.833" y1="110" x2="295.833" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="320" y1="110" x2="320" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="344.167" y1="110" x2="344.167" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="368.333" y1="110" x2="368.333" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="392.5" y1="110" x2="392.5" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="416.667" y1="110" x2="416.667" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="440.833" y1="110" x2="440.833" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="465" y1="110" x2="465" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="489.167" y1="110" x2="489.167" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="513.333" y1="110" x2="513.333" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="537.5" y1="110" x2="537.5" y2="230" stroke="#c7dcc7" stroke-width="1"/>
+<line x1="78.3333" y1="110" x2="78.3333" y2="230" stroke="#1f2a44" stroke-width="4"/>
+<line x1="561.667" y1="110" x2="561.667" y2="230" stroke="#1f2a44" stroke-width="4"/>
+<line x1="247.5" y1="106" x2="247.5" y2="234" stroke="#2f6fd6" stroke-width="3" stroke-dasharray="8 5"/>
+<line x1="295.833" y1="106" x2="295.833" y2="234" stroke="#d64545" stroke-width="3" stroke-dasharray="8 5"/>
+<line x1="440.833" y1="110" x2="440.833" y2="230" stroke="#f2a900" stroke-width="5"/>
+<circle cx="247.5" cy="170" r="10" fill="#2f6fd6" stroke="#1f2a44" stroke-width="1.5"/>
+<ellipse cx="263.5" cy="170" rx="7" ry="4.5" fill="#f2a900" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="237.5" cy="125" r="10" fill="#2f6fd6" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="237.5" cy="145" r="10" fill="#2f6fd6" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="237.5" cy="195" r="10" fill="#2f6fd6" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="237.5" cy="215" r="10" fill="#2f6fd6" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="309.833" cy="125" r="10" fill="#d64545" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="309.833" cy="150" r="10" fill="#d64545" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="309.833" cy="170" r="10" fill="#d64545" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="309.833" cy="190" r="10" fill="#d64545" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="309.833" cy="215" r="10" fill="#d64545" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="54.1667" y="166" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">エンド</text>
+<text x="54.1667" y="184" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">ゾーン</text>
+<text x="585.833" y="166" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">エンド</text>
+<text x="585.833" y="184" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="bold">ゾーン</text>
+<text x="301.833" y="78" font-size="16" text-anchor="start" fill="#1f2a44" font-weight="bold">レシーブチームの線（10ヤード先）</text>
+<line x1="295.833" y1="106" x2="295.833" y2="84" stroke="#1f2a44" stroke-width="1.5"/>
+<line x1="247.5" y1="234" x2="247.5" y2="262" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="30" y="282" font-size="16" text-anchor="start" fill="#1f2a44" font-weight="bold">キックチームの線＝自陣35ヤード</text>
+<line x1="440.833" y1="234" x2="440.833" y2="312" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="450.833" y="332" font-size="16" text-anchor="end" fill="#1f2a44" font-weight="bold">エンドゾーンに入ったボールが止まると</text>
+<text x="450.833" y="356" font-size="16" text-anchor="end" fill="#1f2a44" font-weight="bold">「タッチバック」＝レシーブ側の25ヤードから攻撃</text>
+<text x="24" y="386" font-size="13" text-anchor="start" fill="#1f2a44" font-weight="normal">※キックオフは前後半のはじめ、トライのあと、成功したフィールドゴールのあとに行う</text>
+</svg>

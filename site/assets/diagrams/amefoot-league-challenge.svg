@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" role="img" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic','Meiryo',sans-serif">
+<title>チャレンジマッチ（入れ替え戦）の組み合わせ。TOP8の7位とBIG8の2位、TOP8の8位とBIG8の1位が対戦する</title>
+<rect width="640" height="440" fill="#ffffff"/>
+<text x="320" y="30" font-size="18" text-anchor="middle" fill="#1f2a44" font-weight="bold">チャレンジマッチ（TOP8とBIG8の入れ替え戦）</text>
+<text x="130" y="62" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="bold">TOP8（上のリーグ）</text>
+<text x="510" y="62" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="bold">BIG8（下のリーグ）</text>
+<rect x="30" y="76" width="200" height="28" rx="6" fill="#f1f3f7" stroke="#9aa3b2" stroke-width="1"/>
+<text x="130" y="97" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="normal">1位</text>
+<rect x="30" y="108" width="200" height="28" rx="6" fill="#f1f3f7" stroke="#9aa3b2" stroke-width="1"/>
+<text x="130" y="129" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="normal">2位</text>
+<rect x="30" y="140" width="200" height="28" rx="6" fill="#f1f3f7" stroke="#9aa3b2" stroke-width="1"/>
+<text x="130" y="161" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="normal">3位</text>
+<rect x="30" y="172" width="200" height="28" rx="6" fill="#f1f3f7" stroke="#9aa3b2" stroke-width="1"/>
+<text x="130" y="193" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="normal">4位</text>
+<rect x="30" y="204" width="200" height="28" rx="6" fill="#f1f3f7" stroke="#9aa3b2" stroke-width="1"/>
+<text x="130" y="225" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="normal">5位</text>
+<rect x="30" y="236" width="200" height="28" rx="6" fill="#f1f3f7" stroke="#9aa3b2" stroke-width="1"/>
+<text x="130" y="257" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="normal">6位</text>
+<rect x="30" y="268" width="200" height="28" rx="6" fill="#fbe0e0" stroke="#d64545" stroke-width="2"/>
+<text x="130" y="289" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="bold">7位　①</text>
+<rect x="30" y="300" width="200" height="28" rx="6" fill="#fbe0e0" stroke="#d64545" stroke-width="2"/>
+<text x="130" y="321" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="bold">8位　②</text>
+<rect x="410" y="76" width="200" height="28" rx="6" fill="#dbe7fb" stroke="#2f6fd6" stroke-width="2"/>
+<text x="510" y="97" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="bold">1位　②</text>
+<rect x="410" y="108" width="200" height="28" rx="6" fill="#dbe7fb" stroke="#2f6fd6" stroke-width="2"/>
+<text x="510" y="129" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="bold">2位　①</text>
+<rect x="410" y="140" width="200" height="188" rx="6" fill="#f1f3f7" stroke="#9aa3b2" stroke-width="1"/>
+<text x="510" y="220" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="normal">3位以下</text>
+<line x1="232" y1="282" x2="408" y2="122" stroke="#f2a900" stroke-width="4"/>
+<polygon points="408.0,122.0 404.4,131.4 398.3,124.7" fill="#f2a900"/>
+<line x1="232" y1="314" x2="408" y2="90" stroke="#f2a900" stroke-width="4"/>
+<polygon points="408.0,90.0 406.0,99.9 398.9,94.3" fill="#f2a900"/>
+<text x="320" y="218" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="bold" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">対戦</text>
+<text x="24" y="356" font-size="16" text-anchor="start" fill="#1f2a44" font-weight="bold">①　TOP8の7位 ↔ BIG8の2位</text>
+<text x="24" y="382" font-size="16" text-anchor="start" fill="#1f2a44" font-weight="bold">②　TOP8の8位 ↔ BIG8の1位</text>
+<text x="24" y="412" font-size="16" text-anchor="start" fill="#1f2a44" font-weight="normal">同点で終わった場合は、タイブレークで勝敗を決める</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic','Meiryo',sans-serif">
+<title>スクリメージラインとニュートラルゾーン。ボールの両端を通る2本の線がそれぞれのチームのスクリメージライン、その間のボールの長さ分のすき間がニュートラルゾーン。スナップの瞬間にディフェンスがそこに入っているとオフサイド</title>
+<rect width="640" height="400" fill="#ffffff"/>
+<rect x="20" y="40" width="600" height="215" rx="8" fill="#e8f3e8" stroke="#9aa3b2" stroke-width="1"/>
+<rect x="298" y="40" width="44" height="215" fill="#fdf0c8"/>
+<line x1="298" y1="40" x2="298" y2="255" stroke="#2f6fd6" stroke-width="3" stroke-dasharray="8 5"/>
+<line x1="342" y1="40" x2="342" y2="255" stroke="#d64545" stroke-width="3" stroke-dasharray="8 5"/>
+<circle cx="272" cy="70" r="12" fill="#2f6fd6" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="272" cy="100" r="12" fill="#2f6fd6" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="272" cy="130" r="12" fill="#2f6fd6" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="272" cy="160" r="12" fill="#2f6fd6" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="272" cy="190" r="12" fill="#2f6fd6" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="272" cy="220" r="12" fill="#2f6fd6" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="368" cy="85" r="12" fill="#d64545" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="368" cy="125" r="12" fill="#d64545" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="368" cy="165" r="12" fill="#d64545" stroke="#1f2a44" stroke-width="1.5"/>
+<circle cx="368" cy="205" r="12" fill="#d64545" stroke="#1f2a44" stroke-width="1.5"/>
+<ellipse cx="320" cy="148" rx="20" ry="11" fill="#f2a900" stroke="#1f2a44" stroke-width="1.5"/>
+<line x1="60" y1="246" x2="160" y2="246" stroke="#1f2a44" stroke-width="2"/>
+<polygon points="160.0,246.0 151.0,250.5 151.0,241.5" fill="#1f2a44"/>
+<text x="168" y="251" font-size="14" text-anchor="start" fill="#1f2a44" font-weight="normal" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">攻める向き</text>
+<line x1="298" y1="255" x2="298" y2="270" stroke="#1f2a44" stroke-width="1.5"/>
+<line x1="342" y1="255" x2="342" y2="270" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="302" y="292" font-size="16" text-anchor="end" fill="#1f2a44" font-weight="bold">オフェンスのスクリメージライン</text>
+<text x="338" y="292" font-size="16" text-anchor="start" fill="#1f2a44" font-weight="bold">ディフェンスのスクリメージライン</text>
+<line x1="320" y1="255" x2="320" y2="310" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="320" y="332" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="bold">ニュートラルゾーン（ボールの長さ分のすき間）</text>
+<text x="320" y="360" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="normal">スナップの瞬間にディフェンスがこの中に入っていると「オフサイド」</text>
+<text x="320" y="384" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="normal">スナップ＝オフェンスがボールを後ろへ渡して、プレーが始まる動作</text>
+</svg>

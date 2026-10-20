@@ -61,7 +61,7 @@ level: 入門
 - [TOP8 試合日程・結果](../../top8/schedule/index.html) ― 今後の試合日程と直近の結果
 - [TOP8 チーム一覧](../../top8/teams/index.html) ― 出場校とチームページ
 
-「TOP8」「BIG8」というリーグ名の違いが気になった方は、[大学アメフトTOP8とは｜仕組み・出場校・BIG8との違い](../top8-big8-guide/index.html)もあわせてご覧ください。
+「TOP8」「BIG8」というリーグ名の違いが気になった方は、[大学アメフトTOP8とは｜仕組み・出場校・BIG8との違い](../top8-big8-guide/index.html)もあわせてご覧ください。スタジアムでの服装やチケットなど観戦当日の準備は、[大学アメフト観戦の持ち物・服装・チケットガイド](../amefoot-stadium-guide/index.html)<!-- index-lane-link -->で解説しています。
 
 ## 参考リンク
 

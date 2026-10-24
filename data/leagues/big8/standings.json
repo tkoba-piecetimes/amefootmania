@@ -3,30 +3,58 @@
   {
    "team": "専修大学",
    "slug": "senshu",
-   "points": 9,
-   "wins": 3,
+   "points": 12,
+   "wins": 4,
    "losses": 0,
    "draws": 0,
-   "games": 3,
+   "games": 4,
    "rank": 1,
    "order": 1,
-   "gf": 85,
+   "gf": 101,
    "ga": 22,
-   "goal_diff": "+63"
+   "goal_diff": "+79"
+  },
+  {
+   "team": "駒澤大学",
+   "slug": "komazawa",
+   "points": 9,
+   "wins": 3,
+   "losses": 1,
+   "draws": 0,
+   "games": 4,
+   "rank": 2,
+   "order": 2,
+   "gf": 86,
+   "ga": 44,
+   "goal_diff": "+42"
+  },
+  {
+   "team": "青山学院大学",
+   "slug": "aoyamagakuin",
+   "points": 6,
+   "wins": 2,
+   "losses": 2,
+   "draws": 0,
+   "games": 4,
+   "rank": 3,
+   "order": 3,
+   "gf": 48,
+   "ga": 81,
+   "goal_diff": "-33"
   },
   {
    "team": "横浜国立大学",
    "slug": "yokohama-kokuritsu",
    "points": 3,
    "wins": 1,
-   "losses": 2,
+   "losses": 3,
    "draws": 0,
-   "games": 3,
-   "rank": null,
+   "games": 4,
+   "rank": 4,
    "order": 4,
    "gf": 31,
-   "ga": 47,
-   "goal_diff": "-16"
+   "ga": 63,
+   "goal_diff": "-32"
   },
   {
    "team": "一橋大学",
@@ -41,34 +69,6 @@
    "gf": 35,
    "ga": 91,
    "goal_diff": "-56"
-  },
-  {
-   "team": "青山学院大学",
-   "slug": "aoyamagakuin",
-   "points": 6,
-   "wins": 2,
-   "losses": 1,
-   "draws": 0,
-   "games": 3,
-   "rank": null,
-   "order": null,
-   "gf": 45,
-   "ga": 65,
-   "goal_diff": "-20"
-  },
-  {
-   "team": "駒澤大学",
-   "slug": "komazawa",
-   "points": 6,
-   "wins": 2,
-   "losses": 1,
-   "draws": 0,
-   "games": 3,
-   "rank": null,
-   "order": null,
-   "gf": 70,
-   "ga": 41,
-   "goal_diff": "+29"
   }
  ],
  "BIG8　Bブロック": [

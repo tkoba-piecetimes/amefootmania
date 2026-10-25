@@ -32,7 +32,7 @@
  "国士舘大学": {
   "team": "国士舘大学",
   "slug": "kokushikan",
-  "block": "BIG8　Bブロック"
+  "block": "BIG8二次チャレンジリーグ"
  },
  "明治学院大学": {
   "team": "明治学院大学",
@@ -48,5 +48,50 @@
   "team": "日本大学",
   "slug": "nihon",
   "block": "BIG8　Bブロック"
+ },
+ "専修大学（A1位）": {
+  "team": "専修大学（A1位）",
+  "slug": "senshuudaigaku-a1kurai",
+  "block": "BIG8二次上位リーグ"
+ },
+ "駒澤大学（A2位）": {
+  "team": "駒澤大学（A2位）",
+  "slug": "komazawadaigaku-a2kurai",
+  "block": "BIG8二次上位リーグ"
+ },
+ "青山学院大学（A3位）": {
+  "team": "青山学院大学（A3位）",
+  "slug": "aoyamagakuindaigaku-a3kurai",
+  "block": "BIG8二次上位リーグ"
+ },
+ "日本大学（B1位）": {
+  "team": "日本大学（B1位）",
+  "slug": "nihondaigaku-b1kurai",
+  "block": "BIG8二次上位リーグ"
+ },
+ "明治学院大学（B2位）": {
+  "team": "明治学院大学（B2位）",
+  "slug": "meijigakuindaigaku-b2kurai",
+  "block": "BIG8二次上位リーグ"
+ },
+ "桜美林大学（B3位）": {
+  "team": "桜美林大学（B3位）",
+  "slug": "oubirindaigaku-b3kurai",
+  "block": "BIG8二次上位リーグ"
+ },
+ "横浜国立大学（A4位）": {
+  "team": "横浜国立大学（A4位）",
+  "slug": "yokohamakokuritsudaigaku-a4kurai",
+  "block": "BIG8二次チャレンジリーグ"
+ },
+ "一橋大学（A5位）": {
+  "team": "一橋大学（A5位）",
+  "slug": "hitotsubashidaigaku-a5kurai",
+  "block": "BIG8二次チャレンジリーグ"
+ },
+ "東海大学（B5位）": {
+  "team": "東海大学（B5位）",
+  "slug": "toukaidaigaku-b5kurai",
+  "block": "BIG8二次チャレンジリーグ"
  }
 }

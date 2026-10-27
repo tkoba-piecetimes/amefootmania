@@ -113,7 +113,7 @@ KCFAの公式記録には、天候「雨」の日に行われた試合も記録�
 - [TOP8 チーム一覧](../../top8/teams/index.html) ― 出場校とチームページ
 - [BIG8 試合日程・結果](../../big8/schedule/index.html) ― TOP8に次ぐリーグの日程と結果
 
-「TOP8」「BIG8」というリーグ名の違いが気になった方は、[大学アメフトTOP8とは｜仕組み・出場校・BIG8との違い](../top8-big8-guide/index.html)もあわせてご覧ください。スタジアムでの服装やチケットなど観戦当日の準備は、[大学アメフト観戦の持ち物・服装・チケットガイド](../amefoot-stadium-guide/index.html)<!-- index-lane-link -->で解説しています。春のオープン戦から秋のリーグ戦、甲子園ボウルまでの1年の流れは、[関東大学アメフトの1年間](../amefoot-season-calendar-guide/index.html)で確認できます。
+「TOP8」「BIG8」というリーグ名の違いが気になった方は、[大学アメフトTOP8とは｜仕組み・出場校・BIG8との違い](../top8-big8-guide/index.html)もあわせてご覧ください。順位表の勝ち点や順列の数字の意味が分からないときは、[関東学生アメフトリーグの順位表の見方｜勝ち点と順列の決まり方](../kanto-amefoot-junihyo-guide/index.html)<!-- index-lane-link -->で読み方を解説しています。スタジアムでの服装やチケットなど観戦当日の準備は、[大学アメフト観戦の持ち物・服装・チケットガイド](../amefoot-stadium-guide/index.html)<!-- index-lane-link -->で解説しています。春のオープン戦から秋のリーグ戦、甲子園ボウルまでの1年の流れは、[関東大学アメフトの1年間](../amefoot-season-calendar-guide/index.html)で確認できます。
 
 ## 参考リンク
 

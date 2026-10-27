@@ -76,7 +76,7 @@ TOP8のリーグ戦で**上位3校**に入ると、関東代表として全日�
 - [TOP8 順位表](../../top8/standings/index.html) ― 現在の順位・勝ち点・上位3校の状況
 - [TOP8 試合日程・結果](../../top8/schedule/index.html) ― 直近の試合と今後の予定
 
-シーズン終盤にかけて、TOP8の3位争いは「甲子園ボウルへの出場権をかけた戦い」として最大の見どころのひとつになります。現地で観戦するなら、[大学アメフト観戦の持ち物・服装・チケットガイド](../amefoot-stadium-guide/index.html)<!-- index-lane-link -->でチケットの種類や屋外スタジアムでの服装を確認しておくと安心です。春のオープン戦から秋のリーグ戦、甲子園ボウルまでの1年の流れは[関東大学アメフトの1年間｜春季オープン戦から甲子園ボウルまでの流れ](../amefoot-season-calendar-guide/index.html)で、TOP8の試合を自宅で見る方法は[大学アメフトをテレビ・配信で見る方法](../amefoot-haishin-tv-miru-hoho-guide/index.html)で紹介しています。
+シーズン終盤にかけて、TOP8の3位争いは「甲子園ボウルへの出場権をかけた戦い」として最大の見どころのひとつになります。順位表の勝ち点や「順列」の欄の読み方に迷ったら、[関東学生アメフトリーグの順位表の見方｜勝ち点と順列の決まり方](../kanto-amefoot-junihyo-guide/index.html)<!-- index-lane-link -->も参考になります。現地で観戦するなら、[大学アメフト観戦の持ち物・服装・チケットガイド](../amefoot-stadium-guide/index.html)<!-- index-lane-link -->でチケットの種類や屋外スタジアムでの服装を確認しておくと安心です。春のオープン戦から秋のリーグ戦、甲子園ボウルまでの1年の流れは[関東大学アメフトの1年間｜春季オープン戦から甲子園ボウルまでの流れ](../amefoot-season-calendar-guide/index.html)で、TOP8の試合を自宅で見る方法は[大学アメフトをテレビ・配信で見る方法](../amefoot-haishin-tv-miru-hoho-guide/index.html)で紹介しています。
 
 ## 参考リンク
 

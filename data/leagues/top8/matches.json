@@ -1,5 +1,22 @@
 [
  {
+  "id": "2026-10-31-waseda-vs-hosei",
+  "date": "2026-10-31",
+  "time": "未定",
+  "category": "TOP8",
+  "home": "早稲田大学",
+  "away": "法政大学",
+  "home_slug": "waseda",
+  "away_slug": "hosei",
+  "venue": "",
+  "status": "played",
+  "home_score": 17,
+  "away_score": 21,
+  "winner": "away",
+  "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026103102.pdf",
+  "note": ""
+ },
+ {
   "id": "2026-10-17-waseda-vs-tokyo-u",
   "date": "2026-10-17",
   "time": "未定",
@@ -99,6 +116,23 @@
   "away_score": 14,
   "winner": "away",
   "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026101802.pdf",
+  "note": ""
+ },
+ {
+  "id": "2026-10-31-meiji-vs-tokyo-u",
+  "date": "2026-10-31",
+  "time": "未定",
+  "category": "TOP8",
+  "home": "明治大学",
+  "away": "東京大学",
+  "home_slug": "meiji",
+  "away_slug": "tokyo-u",
+  "venue": "",
+  "status": "played",
+  "home_score": 41,
+  "away_score": 14,
+  "winner": "home",
+  "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026103101.pdf",
   "note": ""
  },
  {
@@ -337,40 +371,6 @@
   "away_score": 20,
   "winner": "home",
   "pdf_url": "https://www.kcfa.jp/files/user/result_pdf/2026101801.pdf",
-  "note": ""
- },
- {
-  "id": "2026-10-31-meiji-vs-tokyo-u",
-  "date": "2026-10-31",
-  "time": "未定",
-  "category": "TOP8",
-  "home": "明治大学",
-  "away": "東京大学",
-  "home_slug": "meiji",
-  "away_slug": "tokyo-u",
-  "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "winner": null,
-  "pdf_url": "",
-  "note": ""
- },
- {
-  "id": "2026-10-31-waseda-vs-hosei",
-  "date": "2026-10-31",
-  "time": "未定",
-  "category": "TOP8",
-  "home": "早稲田大学",
-  "away": "法政大学",
-  "home_slug": "waseda",
-  "away_slug": "hosei",
-  "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "winner": null,
-  "pdf_url": "",
   "note": ""
  },
  {

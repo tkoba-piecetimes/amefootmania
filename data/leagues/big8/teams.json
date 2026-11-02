@@ -32,7 +32,7 @@
  "国士舘大学": {
   "team": "国士舘大学",
   "slug": "kokushikan",
-  "block": "BIG8二次チャレンジリーグ"
+  "block": "BIG8　Bブロック"
  },
  "明治学院大学": {
   "team": "明治学院大学",
@@ -87,6 +87,11 @@
  "一橋大学（A5位）": {
   "team": "一橋大学（A5位）",
   "slug": "hitotsubashidaigaku-a5kurai",
+  "block": "BIG8二次チャレンジリーグ"
+ },
+ "国士舘大学（B4位）": {
+  "team": "国士舘大学（B4位）",
+  "slug": "kokushikandaigaku-b4kurai",
   "block": "BIG8二次チャレンジリーグ"
  },
  "東海大学（B5位）": {

@@ -233,58 +233,58 @@
   {
    "team": "横浜国立大学（A4位）",
    "slug": "yokohamakokuritsudaigaku-a4kurai",
-   "points": 3,
-   "wins": 1,
+   "points": 6,
+   "wins": 2,
    "losses": 3,
    "draws": 0,
-   "games": 4,
+   "games": 5,
    "rank": null,
    "order": null,
-   "gf": 0,
-   "ga": 0,
-   "goal_diff": "0"
+   "gf": 14,
+   "ga": 7,
+   "goal_diff": "+7"
   },
   {
    "team": "一橋大学（A5位）",
    "slug": "hitotsubashidaigaku-a5kurai",
-   "points": 0,
-   "wins": 0,
+   "points": 3,
+   "wins": 1,
    "losses": 4,
    "draws": 0,
-   "games": 4,
+   "games": 5,
    "rank": null,
    "order": null,
-   "gf": 0,
-   "ga": 0,
-   "goal_diff": "0"
+   "gf": 10,
+   "ga": 9,
+   "goal_diff": "+1"
   },
   {
    "team": "国士舘大学（B4位）",
    "slug": "kokushikandaigaku-b4kurai",
    "points": 3,
    "wins": 1,
-   "losses": 3,
+   "losses": 4,
    "draws": 0,
-   "games": 4,
+   "games": 5,
    "rank": null,
    "order": null,
-   "gf": 0,
-   "ga": 0,
-   "goal_diff": "0"
+   "gf": 9,
+   "ga": 10,
+   "goal_diff": "-1"
   },
   {
    "team": "東海大学（B5位）",
    "slug": "toukaidaigaku-b5kurai",
    "points": 0,
    "wins": 0,
-   "losses": 4,
+   "losses": 5,
    "draws": 0,
-   "games": 4,
+   "games": 5,
    "rank": null,
    "order": null,
-   "gf": 0,
-   "ga": 0,
-   "goal_diff": "0"
+   "gf": 7,
+   "ga": 14,
+   "goal_diff": "-7"
   }
  ]
 }

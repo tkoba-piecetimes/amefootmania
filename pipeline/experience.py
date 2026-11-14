@@ -28,7 +28,12 @@ def build(g, leagues, articles, meta):
     <div class="digest-card support-card"><span class="pr-tag">PR</span><h3>協賛募集を無料で掲載</h3><p class="note">部活の運営者の方へ。協賛募集ページを無料で開設できます。</p><a class="cta cta-outline" href="{e(g.LISTING_LP_URL)}" target="_blank" rel="noopener sponsored" onclick="window.gtag&&gtag('event','cv_listing_click')">掲載について問い合わせる →</a></div>
     <div class="digest-card support-card"><span class="pr-tag">PR</span><h3>取材してほしい部活を募集</h3><p class="note">あなたの部活・チームを取材してほしい方はこちらから。</p><a class="cta cta-outline" href="{e(g.MEDIA_CONTACT_URL)}" target="_blank" rel="noopener sponsored" onclick="window.gtag&&gtag('event','cv_media_pr_click')">取材を依頼する →</a></div>
     </div></section>'''
-    g.write_page('',g.page('',f'{g.SITE_NAME} | 大学アメフトの試合結果・順位・データ',body,meta))
+    ov=g.page_override('top',meta)
+    if ov:
+        marker='<section><div class="section-heading"><div><p class="eyebrow">01 / MATCH CENTER'
+        assert marker in body
+        body=body.replace(marker,'<section class="top-intro">'+ov['intro']+'</section>'+marker,1)
+    g.write_page('',g.page('',ov['title'] if ov else f'{g.SITE_NAME} | 大学アメフトの試合結果・順位・データ',body,meta,desc=ov['desc'] if ov else ''))
     options=''.join(f'<option value="{lg["code"]}">{e(lg["label"])}</option>' for lg in leagues)
     teams=sorted({t for lg in leagues for _,ms in lg['matches_by_year'] for m in ms for t in (m['home'],m['away'])})
     team_options=''.join(f'<option>{e(t)}</option>' for t in teams)

@@ -80,6 +80,48 @@ _sitemap_paths: list[str] = []
 
 # ---------------------------------------------------------------- data loading
 
+# ---------------------------------------------------------------- page overrides
+# 特定パスだけ題名・説明文・H1直下の導入文を差し替える個別上書き。
+# キーは出力パス（"top" = サイトトップ、それ以外は "<code>/standings/" 形式）。
+# season は適用するシーズン年度（その年度のデータのときだけ有効にする）。
+PAGE_OVERRIDES = {
+    "top": {
+        "season": 2026,
+        "title": "関東大学アメフト 順位表2026｜TOP8・BIG8の結果・日程 | アメフトマニア",
+        "desc": "関東大学アメフト（関東学生連盟TOP8・BIG8）の2026年度の順位・勝ち点・試合結果・日程を毎日更新。順位表の見方、強豪校の成績、初観戦ガイドもまとめています。",
+        "intro": (
+            '<p class="lead">関東の大学アメフト（関東学生アメリカンフットボール連盟の1部TOP8・BIG8）の'
+            '順位・勝ち点・試合結果・日程を、連盟が公表する星取表をもとに毎日更新しています。'
+            '勝ち点は勝ち3点・引き分け1点・負け0点で、同じ勝ち点で並んだときは「順列」で上下が決まります。'
+            '読み方は<a href="articles/kanto-amefoot-junihyo-guide/index.html">関東大学アメフト順位表の見方</a>、'
+            'BIG8の最新順位は<a href="big8/standings/index.html">BIG8 順位表</a>、'
+            '全試合の結果は<a href="matches/index.html">試合結果一覧</a>で確認できます。'
+            '強いチームを知りたい方は<a href="articles/amefoot-tsuyoi-daigaku-guide/index.html">関東の強豪校を成績データで比較した記事</a>、'
+            '初めて観戦する方は<a href="articles/american-football-watching-guide/index.html">試合時間とルールの入門ガイド</a>もどうぞ。</p>'),
+    },
+    "big8/standings/": {
+        "season": 2026,
+        "title": "BIG8 順位表2026｜関東大学アメフトの最新順位・勝ち点 | アメフトマニア",
+        "desc": "関東大学アメフト1部BIG8の2026年度順位表。Aブロック・Bブロックと二次上位・二次チャレンジリーグの勝敗・勝ち点を毎日更新。順位の決まり方、TOP8とのチャレンジマッチ、入れ替え戦の枠も解説します。",
+        "intro": (
+            '<p class="lead">BIG8は、関東学生アメリカンフットボール連盟（KCFA）の1部のうちTOP8に次ぐリーグです。'
+            '2026年度は5校ずつのAブロック・Bブロックで一次リーグを行い、各ブロック上位3校が二次上位リーグ（最終1〜6位）、'
+            '下位2校が二次チャレンジリーグ（最終7〜10位）に進みます。一次リーグの勝ち点・勝敗・得失点は二次リーグに持ち越されます。'
+            '勝ち点は勝ち3点・引き分け1点・負け0点で、最終順位の1・2位はTOP8とのチャレンジマッチ、5〜8位は2部との入れ替え戦、'
+            '9・10位は2部へ自動降格です。同じ勝ち点で並んだときの決め方は'
+            '<a href="../../articles/kanto-amefoot-junihyo-guide/index.html">関東大学アメフト順位表の見方</a>で解説しています。</p>'),
+    },
+}
+
+
+def page_override(key, meta):
+    """個別上書きがあれば返す。対象シーズン以外のデータでは適用しない。"""
+    ov = PAGE_OVERRIDES.get(key)
+    if ov and ov.get("season") == meta.get("season_year"):
+        return ov
+    return None
+
+
 def load_leagues():
     leagues = []
     for code in LEAGUE_ORDER:
@@ -893,9 +935,16 @@ def build_league(lg, articles):
             body += standings_table(block, entries, L)
     body += '<p class="note">※順位・勝ち点は関東学生アメリカンフットボール連盟（KCFA）が公表する星取表の値をそのまま掲載しています。得失点差は編集部が試合結果から集計した参考値です。</p>'
     body += contact_cta(R, "standings")
+    st_title = f'順位表 | {league_name} | {SITE_NAME}'
+    st_desc = f'{league_name}の順位表。勝ち点・得失点差を毎日更新。'
+    ov = page_override(f"{code}/standings/", meta)
+    if ov:
+        st_title, st_desc = ov["title"], ov["desc"]
+        body = body.replace(f'<h1>順位表</h1><p class="lead">{escape(league_name)}</p>',
+                            f'<h1>順位表</h1><p class="lead">{escape(league_name)}</p>' + ov["intro"], 1)
     write_page(f"{code}/standings",
-               page(R, f'順位表 | {league_name} | {SITE_NAME}', body, meta,
-                    path=f"{code}/standings/", desc=f'{league_name}の順位表。勝ち点・得失点差を毎日更新。',
+               page(R, st_title, body, meta,
+                    path=f"{code}/standings/", desc=st_desc,
                     subnav=sub))
 
     body = f'<h1>チーム一覧</h1><p class="lead">{escape(league_name)}</p>'

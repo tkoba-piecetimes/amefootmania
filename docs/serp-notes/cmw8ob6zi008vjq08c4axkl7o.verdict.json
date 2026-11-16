@@ -1,0 +1,11 @@
+{"factors":[
+{"factor":"検索意図の一致","layer":"article","finding":"選び方・サイズ確認の意図に一致。順位4.3で良好","action":"維持"},
+{"factor":"タイトル・スニペット(CTR)","layer":"article","finding":"CTR 14.3%で同類平均10.3%を上回る","action":"変更しない"},
+{"factor":"網羅性・情報量","layer":"article","finding":"頭囲の測り方が「眉のやや上」程度で具体手順が薄い","action":"測定の具体手順（高さ・余裕・2回測定・髪型）を出典付きで追加"},
+{"factor":"独自性(E-E-A-T)","layer":"article","finding":"国内一次情報はJAFA・QB CLUBに依拠。独自取材は無し","action":"捏造を避け現状維持（取材情報があれば追記可）"},
+{"factor":"構成・読みやすさ","layer":"article","finding":"問題なし","action":"変更なし"},
+{"factor":"内部リンク・トピック構造","layer":"article","finding":"関連用具記事への導線が脳振盪記事1本のみ","action":"マウスガード・ショルダーパッド・首の鍛え方へのリンク節を追加"},
+{"factor":"ドメイン評価・被リンク","layer":"media","finding":"amefootmaniaは暫定noindex運用中で、露出は媒体側の状態に依存","action":"記事単体では不可（noindex解除は媒体側判断）"},
+{"factor":"技術・表示","layer":"media","finding":"TEMP_NOINDEXの影響が表示回数に直結","action":"記事単体では不可"},
+{"factor":"CV","layer":"media","finding":"CTA帯はサイト共通","action":"記事単体では不可"}
+],"summary":"順位・CTRとも同類平均以上で、主因は表示回数の少なさ（サイト側の露出制約）。頭囲測定の具体手順と関連用具への内部リンクを追加した。"}

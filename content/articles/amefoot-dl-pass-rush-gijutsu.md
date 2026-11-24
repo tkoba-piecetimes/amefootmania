@@ -39,6 +39,10 @@ DLの役割そのものについては、spaia「アメフトのポジション�
 
 スピンは、自分の体を回転させながらブロッカーをかわす技術です。同記事では、いったん相手を逆方向にフェイント(揺さぶり)してからスピンすると、ブロッカーの力を逃がしやすくなると説明されています。体格差を補うためのスピード勝負の技術という位置づけで、使うタイミングを誤ると自分の体勢を崩しやすい動きでもあります。
 
+### ブルラッシュ(Bull Rush)——かわさずに押し込む技術
+
+英語圏の解説では、リップ・スイム・スピンと並んで、ブルラッシュも代表的なパスラッシュの動きとして挙げられています(Wikipedia「Pass rush」)。ブルラッシュはブロッカーをかわすのではなく、正面から押し込んでQBの方へ後退させる動きです。DLコーチ向けの解説記事(VIQTORY SPORTS「Defensive Pass Rush Moves Explained For DL Coaches」)では、相手OLの体勢が崩れたときに下から入り込んで押し戻すことが狙いとされ、力の強い選手だけでなく、スピードのある選手が相手の体勢を崩してから使う方法も紹介されています。スイムやリップを警戒して相手が横の動きに備えているときに、まっすぐ押し込む選択肢として組み合わせる考え方です。
+
 ### 技術の選び方は体格と相手の位置で決まる
 
 同記事は、成功するかどうかは、自分の身体的な特徴と、相手(ブロッカー)の位置に技術を合わせられるかにかかっているという立場をとっています。「スイムが上位でリップが下位」といった優劣ではなく、背の高さや相手のスタンス、自分の得意な動きによって使い分けるものと理解しておくと、練習の優先順位を考えやすくなります。
@@ -93,6 +97,8 @@ DLのパスラッシュは、勢いだけでなく「ギャップの責任」「
 - [フットボール教室 – パスラッシュ | アメフト部](https://amefoot-club.com/football-classroom-defense-pass-rush/)
 - [フットボール教室 – 4-3ディフェンス | アメフト部](https://amefoot-club.com/football-classroom-defense-4-3-defensvie-front/)
 - [アメフトのポジション | spaia](https://spaia.jp/column/american_football/1883)
+- [Pass rush | Wikipedia(英語)](https://en.wikipedia.org/wiki/Pass_rush)
+- [Defensive Pass Rush Moves Explained For DL Coaches | VIQTORY SPORTS(英語)](https://www.viqtorysports.com/pass-rush-moves/)
 - [公式規則書 | 日本アメリカンフットボール協会](https://americanfootball.jp/rule)
 - [安全・安心マニュアル | 関東学生アメリカンフットボール連盟](https://www.kcfa.jp/safety/)
 

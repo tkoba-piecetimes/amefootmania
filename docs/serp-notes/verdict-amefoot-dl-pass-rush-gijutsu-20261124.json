@@ -1,0 +1,14 @@
+{
+  "factors": [
+    {"factor": "検索意図の一致", "layer": "article", "finding": "上位は技術解説型（ムーブの種類と使い分け）で自記事と一致。", "action": "型は維持。"},
+    {"factor": "タイトル・スニペット(CTR)", "layer": "article", "finding": "CTR17.8%は同順位帯平均15.8%を上回る。", "action": "タイトル・descriptionは変更しない。"},
+    {"factor": "網羅性・情報量", "layer": "article", "finding": "上位のほぼ全てが代表的な動きにブルラッシュを含めるが、自記事にはなかった。", "action": "ブルラッシュのH3を1つ追加し、Wikipedia・VIQTORY SPORTSを出典に追加（最小差分）。"},
+    {"factor": "独自性(E-E-A-T)", "layer": "media", "finding": "出典は公開記事のみで、DL経験者・指導者の一次情報がない。", "action": "KCFA加盟校のDL経験者・指導者への取材を一次情報バンクに追加する計画を媒体戦略で検討。"},
+    {"factor": "構成・読みやすさ", "layer": "article", "finding": "役割→ギャップ→技術→連携→安全の順で整理されている。", "action": "変更なし。"},
+    {"factor": "内部リンク・トピック構造", "layer": "article", "finding": "OLパスプロ・QB・反則・タックル記事とTOP8/BIG8のデータページへリンク済み。", "action": "変更なし。"},
+    {"factor": "ドメイン評価・被リンク", "layer": "media", "finding": "上位は英語圏の大手サイトとWikipedia。日本語の専用記事は少ないが、ドメインが新しく1位に届かない一因と推定（仮説）。", "action": "ポジション別技術クラスタへの被リンク獲得策を媒体戦略で検討。"},
+    {"factor": "技術・表示", "layer": "media", "finding": "記事テンプレートに構造化データ(Article)の出力がない。", "action": "記事テンプレートへのJSON-LD出力追加を媒体共通改修として扱う。"},
+    {"factor": "CV", "layer": "article", "finding": "cta: sponsor。経験者向け記事で、CVを評価できる量のクリックはない。", "action": "変更なし。"}
+  ],
+  "summary": "CTRは平均を上回っており、主因は網羅性の小さな欠け（ブルラッシュ）とドメイン評価。ブルラッシュのH3を追加する最小差分にとどめた。"
+}
